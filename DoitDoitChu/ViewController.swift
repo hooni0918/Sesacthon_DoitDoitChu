@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var todoView: UIView!
- 
+    
     
     
     override func viewDidLoad() {
@@ -50,7 +50,4 @@ class ViewController: UIViewController {
     
     
 
-
-    
-    
 }
