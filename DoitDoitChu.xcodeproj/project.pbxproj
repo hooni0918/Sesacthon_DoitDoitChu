@@ -13,9 +13,12 @@
 		78543F232A24F8A9009D07D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78543F212A24F8A9009D07D5 /* Main.storyboard */; };
 		78543F252A24F8AA009D07D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78543F242A24F8AA009D07D5 /* Assets.xcassets */; };
 		78543F282A24F8AA009D07D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78543F262A24F8AA009D07D5 /* LaunchScreen.storyboard */; };
+		AFDF4A71C1654CE347D1BFC6 /* Pods_DoitDoitChu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F6CBFB82CB86BE9DDCCB4E /* Pods_DoitDoitChu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C209FECB81ECF38A4A5BB0B /* Pods-DoitDoitChu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoitDoitChu.release.xcconfig"; path = "Target Support Files/Pods-DoitDoitChu/Pods-DoitDoitChu.release.xcconfig"; sourceTree = "<group>"; };
+		3C534DA644DFBAFCC55BE0AA /* Pods-DoitDoitChu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoitDoitChu.debug.xcconfig"; path = "Target Support Files/Pods-DoitDoitChu/Pods-DoitDoitChu.debug.xcconfig"; sourceTree = "<group>"; };
 		78543F182A24F8A9009D07D5 /* DoitDoitChu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoitDoitChu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78543F1B2A24F8A9009D07D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78543F1D2A24F8A9009D07D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		78543F242A24F8AA009D07D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78543F272A24F8AA009D07D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78543F292A24F8AA009D07D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F6CBFB82CB86BE9DDCCB4E /* Pods_DoitDoitChu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoitDoitChu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFDF4A71C1654CE347D1BFC6 /* Pods_DoitDoitChu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64A73CEBCEDA451E51FDE0C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7F6CBFB82CB86BE9DDCCB4E /* Pods_DoitDoitChu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		78543F0F2A24F8A9009D07D5 = {
 			isa = PBXGroup;
 			children = (
 				78543F1A2A24F8A9009D07D5 /* DoitDoitChu */,
 				78543F192A24F8A9009D07D5 /* Products */,
+				C48B342473E70FE64F6E8515 /* Pods */,
+				64A73CEBCEDA451E51FDE0C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = DoitDoitChu;
 			sourceTree = "<group>";
 		};
+		C48B342473E70FE64F6E8515 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C534DA644DFBAFCC55BE0AA /* Pods-DoitDoitChu.debug.xcconfig */,
+				3C209FECB81ECF38A4A5BB0B /* Pods-DoitDoitChu.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78543F2C2A24F8AA009D07D5 /* Build configuration list for PBXNativeTarget "DoitDoitChu" */;
 			buildPhases = (
+				C9BC752541580D9509333240 /* [CP] Check Pods Manifest.lock */,
 				78543F142A24F8A9009D07D5 /* Sources */,
 				78543F152A24F8A9009D07D5 /* Frameworks */,
 				78543F162A24F8A9009D07D5 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9BC752541580D9509333240 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoitDoitChu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		78543F142A24F8A9009D07D5 /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		78543F2D2A24F8AA009D07D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C534DA644DFBAFCC55BE0AA /* Pods-DoitDoitChu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +362,7 @@
 		};
 		78543F2E2A24F8AA009D07D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C209FECB81ECF38A4A5BB0B /* Pods-DoitDoitChu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
