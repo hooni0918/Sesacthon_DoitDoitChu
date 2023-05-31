@@ -11,6 +11,10 @@ class SoloCheckViewController: UIViewController {
 
     @IBOutlet weak var mainVIew: UIView!
     
+    @IBOutlet weak var mainTable: UITableView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

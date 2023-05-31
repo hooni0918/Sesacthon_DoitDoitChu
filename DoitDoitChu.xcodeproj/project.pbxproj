@@ -10,7 +10,6 @@
 		781A23212A263EB100A0B629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 781A23202A263EB100A0B629 /* Assets.xcassets */; };
 		78543F1C2A24F8A9009D07D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78543F1B2A24F8A9009D07D5 /* AppDelegate.swift */; };
 		78543F1E2A24F8A9009D07D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78543F1D2A24F8A9009D07D5 /* SceneDelegate.swift */; };
-		78543F202A24F8A9009D07D5 /* SoloTodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78543F1F2A24F8A9009D07D5 /* SoloTodoVC.swift */; };
 		78543F232A24F8A9009D07D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78543F212A24F8A9009D07D5 /* Main.storyboard */; };
 		78543F282A24F8AA009D07D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78543F262A24F8AA009D07D5 /* LaunchScreen.storyboard */; };
 		78A6158A2A26E37B00FF4888 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78A615812A26E37A00FF4888 /* Pretendard-Regular.otf */; };
@@ -23,6 +22,12 @@
 		78A615912A26E37B00FF4888 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78A615882A26E37B00FF4888 /* Pretendard-Black.otf */; };
 		78A615922A26E37B00FF4888 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78A615892A26E37B00FF4888 /* Pretendard-SemiBold.otf */; };
 		78A615942A26EF4700FF4888 /* SoloCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A615932A26EF4700FF4888 /* SoloCheckViewController.swift */; };
+		78A6159A2A26F4DB00FF4888 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A615992A26F4DB00FF4888 /* HistoryViewController.swift */; };
+		78A6159C2A26F4ED00FF4888 /* TeamTodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6159B2A26F4ED00FF4888 /* TeamTodoVC.swift */; };
+		78A6159E2A26F4F900FF4888 /* TeamCheckvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6159D2A26F4F900FF4888 /* TeamCheckvc.swift */; };
+		78D5EBB52A2747D400A239FF /* SoloTodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D5EBB42A2747D400A239FF /* SoloTodoVC.swift */; };
+		78D5EBB82A27483100A239FF /* SoloTodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D5EBB62A27483100A239FF /* SoloTodoList.swift */; };
+		78D5EBB92A27483100A239FF /* SoloTodoList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78D5EBB72A27483100A239FF /* SoloTodoList.xib */; };
 		AFDF4A71C1654CE347D1BFC6 /* Pods_DoitDoitChu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F6CBFB82CB86BE9DDCCB4E /* Pods_DoitDoitChu.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +38,6 @@
 		78543F182A24F8A9009D07D5 /* DoitDoitChu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoitDoitChu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78543F1B2A24F8A9009D07D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78543F1D2A24F8A9009D07D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		78543F1F2A24F8A9009D07D5 /* SoloTodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloTodoVC.swift; sourceTree = "<group>"; };
 		78543F222A24F8A9009D07D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78543F272A24F8AA009D07D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78543F292A24F8AA009D07D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +51,12 @@
 		78A615882A26E37B00FF4888 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
 		78A615892A26E37B00FF4888 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		78A615932A26EF4700FF4888 /* SoloCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloCheckViewController.swift; sourceTree = "<group>"; };
+		78A615992A26F4DB00FF4888 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		78A6159B2A26F4ED00FF4888 /* TeamTodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTodoVC.swift; sourceTree = "<group>"; };
+		78A6159D2A26F4F900FF4888 /* TeamCheckvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCheckvc.swift; sourceTree = "<group>"; };
+		78D5EBB42A2747D400A239FF /* SoloTodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloTodoVC.swift; sourceTree = "<group>"; };
+		78D5EBB62A27483100A239FF /* SoloTodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloTodoList.swift; sourceTree = "<group>"; };
+		78D5EBB72A27483100A239FF /* SoloTodoList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoloTodoList.xib; sourceTree = "<group>"; };
 		B7F6CBFB82CB86BE9DDCCB4E /* Pods_DoitDoitChu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoitDoitChu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,16 +118,45 @@
 			isa = PBXGroup;
 			children = (
 				781A23142A26366000A0B629 /* Font */,
+				78A615982A26F4C600FF4888 /* History */,
+				78A615972A26F4BA00FF4888 /* Team */,
+				78A615952A26F49C00FF4888 /* Solo */,
 				78543F1B2A24F8A9009D07D5 /* AppDelegate.swift */,
 				78543F1D2A24F8A9009D07D5 /* SceneDelegate.swift */,
-				78543F1F2A24F8A9009D07D5 /* SoloTodoVC.swift */,
 				78543F212A24F8A9009D07D5 /* Main.storyboard */,
-				78A615932A26EF4700FF4888 /* SoloCheckViewController.swift */,
 				781A23202A263EB100A0B629 /* Assets.xcassets */,
 				78543F262A24F8AA009D07D5 /* LaunchScreen.storyboard */,
 				78543F292A24F8AA009D07D5 /* Info.plist */,
 			);
 			path = DoitDoitChu;
+			sourceTree = "<group>";
+		};
+		78A615952A26F49C00FF4888 /* Solo */ = {
+			isa = PBXGroup;
+			children = (
+				78D5EBB42A2747D400A239FF /* SoloTodoVC.swift */,
+				78A615932A26EF4700FF4888 /* SoloCheckViewController.swift */,
+				78D5EBB62A27483100A239FF /* SoloTodoList.swift */,
+				78D5EBB72A27483100A239FF /* SoloTodoList.xib */,
+			);
+			path = Solo;
+			sourceTree = "<group>";
+		};
+		78A615972A26F4BA00FF4888 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				78A6159B2A26F4ED00FF4888 /* TeamTodoVC.swift */,
+				78A6159D2A26F4F900FF4888 /* TeamCheckvc.swift */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
+		78A615982A26F4C600FF4888 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				78A615992A26F4DB00FF4888 /* HistoryViewController.swift */,
+			);
+			path = History;
 			sourceTree = "<group>";
 		};
 		C48B342473E70FE64F6E8515 /* Pods */ = {
@@ -190,6 +229,7 @@
 			files = (
 				78543F282A24F8AA009D07D5 /* LaunchScreen.storyboard in Resources */,
 				78A6158B2A26E37B00FF4888 /* Pretendard-Thin.otf in Resources */,
+				78D5EBB92A27483100A239FF /* SoloTodoList.xib in Resources */,
 				78A615902A26E37B00FF4888 /* Pretendard-ExtraLight.otf in Resources */,
 				78A615922A26E37B00FF4888 /* Pretendard-SemiBold.otf in Resources */,
 				78A6158C2A26E37B00FF4888 /* Pretendard-ExtraBold.otf in Resources */,
@@ -235,9 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78543F202A24F8A9009D07D5 /* SoloTodoVC.swift in Sources */,
+				78A6159C2A26F4ED00FF4888 /* TeamTodoVC.swift in Sources */,
 				78543F1C2A24F8A9009D07D5 /* AppDelegate.swift in Sources */,
 				78A615942A26EF4700FF4888 /* SoloCheckViewController.swift in Sources */,
+				78A6159A2A26F4DB00FF4888 /* HistoryViewController.swift in Sources */,
+				78D5EBB82A27483100A239FF /* SoloTodoList.swift in Sources */,
+				78D5EBB52A2747D400A239FF /* SoloTodoVC.swift in Sources */,
+				78A6159E2A26F4F900FF4888 /* TeamCheckvc.swift in Sources */,
 				78543F1E2A24F8A9009D07D5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
