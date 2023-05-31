@@ -22,6 +22,7 @@
 		78A615902A26E37B00FF4888 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78A615872A26E37B00FF4888 /* Pretendard-ExtraLight.otf */; };
 		78A615912A26E37B00FF4888 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78A615882A26E37B00FF4888 /* Pretendard-Black.otf */; };
 		78A615922A26E37B00FF4888 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78A615892A26E37B00FF4888 /* Pretendard-SemiBold.otf */; };
+		78A615942A26EF4700FF4888 /* SoloTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A615932A26EF4700FF4888 /* SoloTodoViewController.swift */; };
 		AFDF4A71C1654CE347D1BFC6 /* Pods_DoitDoitChu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F6CBFB82CB86BE9DDCCB4E /* Pods_DoitDoitChu.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		78A615872A26E37B00FF4888 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
 		78A615882A26E37B00FF4888 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
 		78A615892A26E37B00FF4888 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		78A615932A26EF4700FF4888 /* SoloTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloTodoViewController.swift; sourceTree = "<group>"; };
 		B7F6CBFB82CB86BE9DDCCB4E /* Pods_DoitDoitChu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoitDoitChu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 				78543F1D2A24F8A9009D07D5 /* SceneDelegate.swift */,
 				78543F1F2A24F8A9009D07D5 /* ViewController.swift */,
 				78543F212A24F8A9009D07D5 /* Main.storyboard */,
+				78A615932A26EF4700FF4888 /* SoloTodoViewController.swift */,
 				781A23202A263EB100A0B629 /* Assets.xcassets */,
 				78543F262A24F8AA009D07D5 /* LaunchScreen.storyboard */,
 				78543F292A24F8AA009D07D5 /* Info.plist */,
@@ -234,6 +237,7 @@
 			files = (
 				78543F202A24F8A9009D07D5 /* ViewController.swift in Sources */,
 				78543F1C2A24F8A9009D07D5 /* AppDelegate.swift in Sources */,
+				78A615942A26EF4700FF4888 /* SoloTodoViewController.swift in Sources */,
 				78543F1E2A24F8A9009D07D5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
