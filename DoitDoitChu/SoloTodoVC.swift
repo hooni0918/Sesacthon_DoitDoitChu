@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SoloTodoVC: UIViewController {
     
     @IBOutlet weak var todoView: UIView!
     

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SoloTodoViewController: UIViewController {
+class SoloCheckViewController: UIViewController {
 
     @IBOutlet weak var mainVIew: UIView!
     
