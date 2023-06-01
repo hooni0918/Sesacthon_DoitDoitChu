@@ -12,6 +12,7 @@
 		78543F1E2A24F8A9009D07D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78543F1D2A24F8A9009D07D5 /* SceneDelegate.swift */; };
 		78543F232A24F8A9009D07D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78543F212A24F8A9009D07D5 /* Main.storyboard */; };
 		78543F282A24F8AA009D07D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78543F262A24F8AA009D07D5 /* LaunchScreen.storyboard */; };
+		785DECF82A286AC200937B27 /* StartTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785DECF72A286AC200937B27 /* StartTeamViewController.swift */; };
 		78A6158A2A26E37B00FF4888 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78A615812A26E37A00FF4888 /* Pretendard-Regular.otf */; };
 		78A6158B2A26E37B00FF4888 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78A615822A26E37A00FF4888 /* Pretendard-Thin.otf */; };
 		78A6158C2A26E37B00FF4888 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78A615832A26E37A00FF4888 /* Pretendard-ExtraBold.otf */; };
@@ -27,7 +28,9 @@
 		78A6159E2A26F4F900FF4888 /* TeamCheckvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6159D2A26F4F900FF4888 /* TeamCheckvc.swift */; };
 		78D5EBB52A2747D400A239FF /* SoloTodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D5EBB42A2747D400A239FF /* SoloTodoVC.swift */; };
 		78D5EBB82A27483100A239FF /* SoloTodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D5EBB62A27483100A239FF /* SoloTodoList.swift */; };
-		78D5EBB92A27483100A239FF /* SoloTodoList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78D5EBB72A27483100A239FF /* SoloTodoList.xib */; };
+		78D5EBBF2A275A1400A239FF /* SoloTodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D5EBBE2A275A1400A239FF /* SoloTodoTableViewCell.swift */; };
+		78D5EBC22A28317400A239FF /* CheckListTestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D5EBC02A28317400A239FF /* CheckListTestTableViewCell.swift */; };
+		78D5EBC32A28317400A239FF /* CheckListTestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78D5EBC12A28317400A239FF /* CheckListTestTableViewCell.xib */; };
 		AFDF4A71C1654CE347D1BFC6 /* Pods_DoitDoitChu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F6CBFB82CB86BE9DDCCB4E /* Pods_DoitDoitChu.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,7 @@
 		78543F222A24F8A9009D07D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78543F272A24F8AA009D07D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78543F292A24F8AA009D07D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		785DECF72A286AC200937B27 /* StartTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTeamViewController.swift; sourceTree = "<group>"; };
 		78A615812A26E37A00FF4888 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		78A615822A26E37A00FF4888 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		78A615832A26E37A00FF4888 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
@@ -56,7 +60,9 @@
 		78A6159D2A26F4F900FF4888 /* TeamCheckvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCheckvc.swift; sourceTree = "<group>"; };
 		78D5EBB42A2747D400A239FF /* SoloTodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloTodoVC.swift; sourceTree = "<group>"; };
 		78D5EBB62A27483100A239FF /* SoloTodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloTodoList.swift; sourceTree = "<group>"; };
-		78D5EBB72A27483100A239FF /* SoloTodoList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoloTodoList.xib; sourceTree = "<group>"; };
+		78D5EBBE2A275A1400A239FF /* SoloTodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloTodoTableViewCell.swift; sourceTree = "<group>"; };
+		78D5EBC02A28317400A239FF /* CheckListTestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListTestTableViewCell.swift; sourceTree = "<group>"; };
+		78D5EBC12A28317400A239FF /* CheckListTestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListTestTableViewCell.xib; sourceTree = "<group>"; };
 		B7F6CBFB82CB86BE9DDCCB4E /* Pods_DoitDoitChu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoitDoitChu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -135,9 +141,11 @@
 			isa = PBXGroup;
 			children = (
 				78D5EBB42A2747D400A239FF /* SoloTodoVC.swift */,
+				78D5EBBE2A275A1400A239FF /* SoloTodoTableViewCell.swift */,
 				78A615932A26EF4700FF4888 /* SoloCheckViewController.swift */,
 				78D5EBB62A27483100A239FF /* SoloTodoList.swift */,
-				78D5EBB72A27483100A239FF /* SoloTodoList.xib */,
+				78D5EBC02A28317400A239FF /* CheckListTestTableViewCell.swift */,
+				78D5EBC12A28317400A239FF /* CheckListTestTableViewCell.xib */,
 			);
 			path = Solo;
 			sourceTree = "<group>";
@@ -147,6 +155,7 @@
 			children = (
 				78A6159B2A26F4ED00FF4888 /* TeamTodoVC.swift */,
 				78A6159D2A26F4F900FF4888 /* TeamCheckvc.swift */,
+				785DECF72A286AC200937B27 /* StartTeamViewController.swift */,
 			);
 			path = Team;
 			sourceTree = "<group>";
@@ -228,8 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				78543F282A24F8AA009D07D5 /* LaunchScreen.storyboard in Resources */,
+				78D5EBC32A28317400A239FF /* CheckListTestTableViewCell.xib in Resources */,
 				78A6158B2A26E37B00FF4888 /* Pretendard-Thin.otf in Resources */,
-				78D5EBB92A27483100A239FF /* SoloTodoList.xib in Resources */,
 				78A615902A26E37B00FF4888 /* Pretendard-ExtraLight.otf in Resources */,
 				78A615922A26E37B00FF4888 /* Pretendard-SemiBold.otf in Resources */,
 				78A6158C2A26E37B00FF4888 /* Pretendard-ExtraBold.otf in Resources */,
@@ -279,7 +288,10 @@
 				78543F1C2A24F8A9009D07D5 /* AppDelegate.swift in Sources */,
 				78A615942A26EF4700FF4888 /* SoloCheckViewController.swift in Sources */,
 				78A6159A2A26F4DB00FF4888 /* HistoryViewController.swift in Sources */,
+				785DECF82A286AC200937B27 /* StartTeamViewController.swift in Sources */,
+				78D5EBC22A28317400A239FF /* CheckListTestTableViewCell.swift in Sources */,
 				78D5EBB82A27483100A239FF /* SoloTodoList.swift in Sources */,
+				78D5EBBF2A275A1400A239FF /* SoloTodoTableViewCell.swift in Sources */,
 				78D5EBB52A2747D400A239FF /* SoloTodoVC.swift in Sources */,
 				78A6159E2A26F4F900FF4888 /* TeamCheckvc.swift in Sources */,
 				78543F1E2A24F8A9009D07D5 /* SceneDelegate.swift in Sources */,

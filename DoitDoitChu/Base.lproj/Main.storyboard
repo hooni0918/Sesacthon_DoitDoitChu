@@ -178,7 +178,7 @@
                                         <color key="separatorColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="sectionIndexBackgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="PK6-Ln-NWb">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SoloTodoTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="PK6-Ln-NWb" customClass="SoloTodoTableViewCell" customModule="DoitDoitChu" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="50" width="345" height="43.666667938232422"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PK6-Ln-NWb" id="b0y-ZA-1Ji">
@@ -215,9 +215,14 @@
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <outlet property="TodoLabel" destination="oKf-kn-7A4" id="F30-sA-TgN"/>
+                                                    <outlet property="checkBtn" destination="LgR-Uc-HHc" id="Kea-Nc-esu"/>
+                                                    <outlet property="moreBtn" destination="QZZ-v3-YVp" id="g5y-cl-YNw"/>
+                                                </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="sFA-N2-Z9r">
                                                 <rect key="frame" x="0.0" y="93.666667938232422" width="345" height="43.666667938232422"/>
@@ -260,6 +265,10 @@
                                                 <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </tableViewCell>
                                         </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="plB-pW-oap" id="n8Y-7b-2Nn"/>
+                                            <outlet property="delegate" destination="plB-pW-oap" id="gmU-P0-5Q6"/>
+                                        </connections>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -328,7 +337,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GQp-15-GmN">
-                                <rect key="frame" x="22" y="529" width="349" height="154"/>
+                                <rect key="frame" x="22" y="480" width="349" height="252"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="오늘의 할일을 달성해 주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7F-gC-sJw">
                                         <rect key="frame" x="38" y="7" width="176" height="34"/>
@@ -372,7 +381,7 @@
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0j0-75-J61">
-                                <rect key="frame" x="16" y="103" width="361" height="320"/>
+                                <rect key="frame" x="16" y="59" width="361" height="320"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="320" id="tJ6-uC-Gvf"/>
@@ -399,7 +408,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fZ-vr-CO5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2304.5801526717555" y="-71.126760563380287"/>
+            <point key="canvasLocation" x="7286" y="-71"/>
         </scene>
         <!--Team Checkvc-->
         <scene sceneID="5WZ-rC-I7D">
@@ -415,7 +424,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vfi-9g-oMi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3196" y="-208"/>
+            <point key="canvasLocation" x="8176" y="-123"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9se-hG-kfE">
@@ -466,12 +475,119 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="KzM-7c-pOu" kind="relationship" relationship="rootViewController" id="PNH-Ai-VHU"/>
+                        <segue destination="ktq-QF-0Qw" kind="relationship" relationship="rootViewController" id="MLe-EE-9LP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vGy-Rs-cbg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1377.8625954198474" y="-71.126760563380287"/>
+        </scene>
+        <!--Start Team View Controller-->
+        <scene sceneID="A1D-qv-BTe">
+            <objects>
+                <viewController id="ktq-QF-0Qw" customClass="StartTeamViewController" customModule="DoitDoitChu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="55V-LF-L3v">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TeamGift" translatesAutoresizingMaskIntoConstraints="NO" id="SRM-xG-w2u">
+                                <rect key="frame" x="20" y="253" width="353" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="bON-Ou-FtK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="함께 캐릭터를 만들어 볼까요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swv-ee-lSD">
+                                <rect key="frame" x="20.000000000000014" y="133" width="232.33333333333337" height="24"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bi2-6X-xUr">
+                                <rect key="frame" x="20" y="659" width="353" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhV-ly-K12">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="48"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="시작하기!">
+                                            <fontDescription key="titleFontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="14"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="hYr-OK-mhE" kind="show" id="pcJ-zu-4Sy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="BhV-ly-K12" secondAttribute="bottom" id="6Ml-8I-PzX"/>
+                                    <constraint firstAttribute="height" constant="48" id="MbB-Us-wJe"/>
+                                    <constraint firstItem="BhV-ly-K12" firstAttribute="top" secondItem="bi2-6X-xUr" secondAttribute="top" id="bXQ-sB-tam"/>
+                                    <constraint firstAttribute="trailing" secondItem="BhV-ly-K12" secondAttribute="trailing" id="bvf-AO-4fb"/>
+                                    <constraint firstItem="BhV-ly-K12" firstAttribute="leading" secondItem="bi2-6X-xUr" secondAttribute="leading" id="lHx-CD-1ki"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QWO-VT-gf1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SRM-xG-w2u" firstAttribute="centerX" secondItem="55V-LF-L3v" secondAttribute="centerX" id="0AX-Gu-FzL"/>
+                            <constraint firstItem="QWO-VT-gf1" firstAttribute="trailing" secondItem="SRM-xG-w2u" secondAttribute="trailing" constant="20" id="AnS-ox-U0I"/>
+                            <constraint firstItem="SRM-xG-w2u" firstAttribute="top" secondItem="swv-ee-lSD" secondAttribute="bottom" constant="96" id="Eng-SB-un9"/>
+                            <constraint firstItem="swv-ee-lSD" firstAttribute="top" secondItem="QWO-VT-gf1" secondAttribute="top" constant="30" id="KOB-QJ-IAn"/>
+                            <constraint firstItem="bi2-6X-xUr" firstAttribute="leading" secondItem="QWO-VT-gf1" secondAttribute="leading" constant="20" id="T3T-wd-R8q"/>
+                            <constraint firstItem="swv-ee-lSD" firstAttribute="leading" secondItem="QWO-VT-gf1" secondAttribute="leading" constant="20" id="aKO-6l-FNe"/>
+                            <constraint firstItem="bi2-6X-xUr" firstAttribute="top" secondItem="SRM-xG-w2u" secondAttribute="bottom" constant="56" id="dUp-OA-H2K"/>
+                            <constraint firstItem="SRM-xG-w2u" firstAttribute="leading" secondItem="QWO-VT-gf1" secondAttribute="leading" constant="20" id="if4-Qj-wig"/>
+                            <constraint firstItem="QWO-VT-gf1" firstAttribute="trailing" secondItem="bi2-6X-xUr" secondAttribute="trailing" constant="20" id="ucc-AM-Psv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ufA-FI-Pti"/>
+                    <connections>
+                        <outlet property="nextView" destination="bi2-6X-xUr" id="Toh-GY-Lsn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJX-k1-F15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2533.5877862595421" y="-71.126760563380287"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TUh-BM-J0k">
+            <objects>
+                <viewController id="hYr-OK-mhE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZPb-sv-bez">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zF9-Zk-Pem">
+                                <rect key="frame" x="20" y="133" width="195" height="53"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원하시는 투두의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8An-Ag-qvu">
+                                        <rect key="frame" x="0.0" y="0.0" width="125.66666666666667" height="24"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카테로리를 선택해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHn-ko-U0h">
+                                        <rect key="frame" x="0.0" y="29" width="195" height="24"/>
+                                        <fontDescription key="fontDescription" name="Pretendard-Bold" family="Pretendard" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zh6-En-kbW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zF9-Zk-Pem" firstAttribute="leading" secondItem="Zh6-En-kbW" secondAttribute="leading" constant="20" id="DZ4-h0-mKM"/>
+                            <constraint firstItem="zF9-Zk-Pem" firstAttribute="top" secondItem="Zh6-En-kbW" secondAttribute="top" constant="30" id="P3y-V6-J1k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6lR-oj-eFI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wz0-t1-W8G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3518" y="-71"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ddS-7H-jhB">
@@ -500,6 +616,7 @@
         <image name="TabHistory" width="45" height="48"/>
         <image name="TabSoloTodo" width="45" height="48"/>
         <image name="TabTeam" width="35" height="48"/>
+        <image name="TeamGift" width="370" height="301"/>
         <image name="meatBall" width="20" height="20"/>
         <image name="unCheckSquare" width="24" height="24"/>
         <namedColor name="Orange 1000">
@@ -507,6 +624,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
