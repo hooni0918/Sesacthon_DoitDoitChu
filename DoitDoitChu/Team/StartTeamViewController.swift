@@ -10,6 +10,7 @@ import UIKit
 class StartTeamViewController: UIViewController {
 
     @IBOutlet weak var nextView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
