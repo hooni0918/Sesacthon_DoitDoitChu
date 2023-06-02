@@ -13,6 +13,7 @@
 		78543F232A24F8A9009D07D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78543F212A24F8A9009D07D5 /* Main.storyboard */; };
 		78543F282A24F8AA009D07D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78543F262A24F8AA009D07D5 /* LaunchScreen.storyboard */; };
 		785DECF82A286AC200937B27 /* StartTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785DECF72A286AC200937B27 /* StartTeamViewController.swift */; };
+		785DECFA2A28BE9600937B27 /* TeamTodoCharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785DECF92A28BE9600937B27 /* TeamTodoCharViewController.swift */; };
 		78A6158A2A26E37B00FF4888 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78A615812A26E37A00FF4888 /* Pretendard-Regular.otf */; };
 		78A6158B2A26E37B00FF4888 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78A615822A26E37A00FF4888 /* Pretendard-Thin.otf */; };
 		78A6158C2A26E37B00FF4888 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78A615832A26E37A00FF4888 /* Pretendard-ExtraBold.otf */; };
@@ -45,6 +46,7 @@
 		78543F272A24F8AA009D07D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78543F292A24F8AA009D07D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		785DECF72A286AC200937B27 /* StartTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTeamViewController.swift; sourceTree = "<group>"; };
+		785DECF92A28BE9600937B27 /* TeamTodoCharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTodoCharViewController.swift; sourceTree = "<group>"; };
 		78A615812A26E37A00FF4888 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		78A615822A26E37A00FF4888 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		78A615832A26E37A00FF4888 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				78A6159B2A26F4ED00FF4888 /* TeamTodoVC.swift */,
 				78A6159D2A26F4F900FF4888 /* TeamCheckvc.swift */,
 				785DECF72A286AC200937B27 /* StartTeamViewController.swift */,
+				785DECF92A28BE9600937B27 /* TeamTodoCharViewController.swift */,
 			);
 			path = Team;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				78D5EBBF2A275A1400A239FF /* SoloTodoTableViewCell.swift in Sources */,
 				78D5EBB52A2747D400A239FF /* SoloTodoVC.swift in Sources */,
 				78A6159E2A26F4F900FF4888 /* TeamCheckvc.swift in Sources */,
+				785DECFA2A28BE9600937B27 /* TeamTodoCharViewController.swift in Sources */,
 				78543F1E2A24F8A9009D07D5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,23 +7,50 @@
 
 import UIKit
 
-class TeamCheckvc: UIViewController {
-
+class TeamCheckvc: UIViewController, UIScrollViewDelegate {
+    
+    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    
+    var images = ["Rectangle 611", "TeamGift"]
+    var imageViews = [UIImageView]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        scrollView.delegate = self
+        addContentScrollView()
+        setPageControl()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func addContentScrollView() {
+        
+        for i in 0..<images.count {
+            let imageView = UIImageView()
+            let xPos = scrollView.frame.width * CGFloat(i)
+            imageView.frame = CGRect(x: xPos, y: 0, width: scrollView.bounds.width, height: scrollView.bounds.height)
+            imageView.image = UIImage(named: images[i])
+            scrollView.addSubview(imageView)
+            scrollView.contentSize.width = imageView.frame.width * CGFloat(i + 1)
+        }
+        
     }
-    */
+    
+    private func setPageControl() {
+        pageControl.numberOfPages = images.count
+        
+    }
+    
+    private func setPageControlSelectedPage(currentPage:Int) {
+        pageControl.currentPage = currentPage
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let value = scrollView.contentOffset.x/scrollView.frame.size.width
+        setPageControlSelectedPage(currentPage: Int(round(value)))
+    }
+
 
 }
