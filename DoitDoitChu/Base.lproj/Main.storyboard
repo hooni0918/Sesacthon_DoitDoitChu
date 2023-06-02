@@ -534,14 +534,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="aCM-5X-xhs">
                                         <rect key="frame" x="0.0" y="0.0" width="353.33333333333331" height="150"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 611" translatesAutoresizingMaskIntoConstraints="NO" id="kWu-N9-QAd">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 39" translatesAutoresizingMaskIntoConstraints="NO" id="kWu-N9-QAd">
                                                 <rect key="frame" x="0.0" y="0.0" width="165.66666666666666" height="150"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="165.66666666666666" id="DNN-y6-0Lp"/>
                                                     <constraint firstAttribute="height" constant="150" id="IV2-vr-OSv"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 611" translatesAutoresizingMaskIntoConstraints="NO" id="Ncs-W5-Vsa">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 40" translatesAutoresizingMaskIntoConstraints="NO" id="Ncs-W5-Vsa">
                                                 <rect key="frame" x="187.66666666666669" y="0.0" width="165.66666666666669" height="150"/>
                                             </imageView>
                                         </subviews>
@@ -549,14 +549,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="rOu-dJ-tl2">
                                         <rect key="frame" x="0.0" y="170" width="353.33333333333331" height="150"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 611" translatesAutoresizingMaskIntoConstraints="NO" id="9po-j2-Snj">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 42" translatesAutoresizingMaskIntoConstraints="NO" id="9po-j2-Snj">
                                                 <rect key="frame" x="0.0" y="0.0" width="165.66666666666666" height="150"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="165.66666666666666" id="Vns-Jv-7RL"/>
                                                     <constraint firstAttribute="height" constant="150" id="bWP-dL-Jfy"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 611" translatesAutoresizingMaskIntoConstraints="NO" id="dcr-A6-CeI">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 40-1" translatesAutoresizingMaskIntoConstraints="NO" id="dcr-A6-CeI">
                                                 <rect key="frame" x="187.66666666666669" y="0.0" width="165.66666666666669" height="150"/>
                                             </imageView>
                                         </subviews>
@@ -564,14 +564,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="6KE-r4-ME0">
                                         <rect key="frame" x="0.0" y="340" width="353.33333333333331" height="150"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 611" translatesAutoresizingMaskIntoConstraints="NO" id="80E-uc-FB0">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 41" translatesAutoresizingMaskIntoConstraints="NO" id="80E-uc-FB0">
                                                 <rect key="frame" x="0.0" y="0.0" width="165.66666666666666" height="150"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="165.66666666666666" id="v7H-sf-hey"/>
                                                     <constraint firstAttribute="height" constant="150" id="wJS-bS-ucD"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 611" translatesAutoresizingMaskIntoConstraints="NO" id="DX7-CW-eJK">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 43" translatesAutoresizingMaskIntoConstraints="NO" id="DX7-CW-eJK">
                                                 <rect key="frame" x="187.66666666666669" y="0.0" width="165.66666666666669" height="150"/>
                                             </imageView>
                                         </subviews>
@@ -597,7 +597,7 @@
                             <constraint firstItem="mZC-IF-FEf" firstAttribute="centerY" secondItem="ZPb-sv-bez" secondAttribute="centerY" constant="50" id="wYh-tN-ktk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="6lR-oj-eFI"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" style="editor" id="6lR-oj-eFI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wz0-t1-W8G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -680,7 +680,12 @@
         <image name="CheckSquare" width="22" height="22"/>
         <image name="Group 11" width="73" height="21"/>
         <image name="Group 3" width="59.666667938232422" height="23"/>
-        <image name="Rectangle 611" width="492" height="450"/>
+        <image name="Group 39" width="492" height="450"/>
+        <image name="Group 40" width="492" height="450"/>
+        <image name="Group 40-1" width="492" height="450"/>
+        <image name="Group 41" width="492" height="450"/>
+        <image name="Group 42" width="492" height="450"/>
+        <image name="Group 43" width="492" height="450"/>
         <image name="TabHistory" width="45" height="48"/>
         <image name="TabSoloTodo" width="45" height="48"/>
         <image name="TabTeam" width="35" height="48"/>
