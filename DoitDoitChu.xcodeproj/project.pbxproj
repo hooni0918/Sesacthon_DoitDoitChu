@@ -28,8 +28,6 @@
 		78A6159C2A26F4ED00FF4888 /* TeamTodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6159B2A26F4ED00FF4888 /* TeamTodoVC.swift */; };
 		78A6159E2A26F4F900FF4888 /* TeamCheckvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6159D2A26F4F900FF4888 /* TeamCheckvc.swift */; };
 		78D5EBB52A2747D400A239FF /* SoloTodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D5EBB42A2747D400A239FF /* SoloTodoVC.swift */; };
-		78D5EBB82A27483100A239FF /* SoloTodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D5EBB62A27483100A239FF /* SoloTodoList.swift */; };
-		78D5EBBF2A275A1400A239FF /* SoloTodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D5EBBE2A275A1400A239FF /* SoloTodoTableViewCell.swift */; };
 		78D5EBC22A28317400A239FF /* CheckListTestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D5EBC02A28317400A239FF /* CheckListTestTableViewCell.swift */; };
 		78D5EBC32A28317400A239FF /* CheckListTestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78D5EBC12A28317400A239FF /* CheckListTestTableViewCell.xib */; };
 		AFDF4A71C1654CE347D1BFC6 /* Pods_DoitDoitChu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F6CBFB82CB86BE9DDCCB4E /* Pods_DoitDoitChu.framework */; };
@@ -61,8 +59,6 @@
 		78A6159B2A26F4ED00FF4888 /* TeamTodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTodoVC.swift; sourceTree = "<group>"; };
 		78A6159D2A26F4F900FF4888 /* TeamCheckvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCheckvc.swift; sourceTree = "<group>"; };
 		78D5EBB42A2747D400A239FF /* SoloTodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloTodoVC.swift; sourceTree = "<group>"; };
-		78D5EBB62A27483100A239FF /* SoloTodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloTodoList.swift; sourceTree = "<group>"; };
-		78D5EBBE2A275A1400A239FF /* SoloTodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloTodoTableViewCell.swift; sourceTree = "<group>"; };
 		78D5EBC02A28317400A239FF /* CheckListTestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListTestTableViewCell.swift; sourceTree = "<group>"; };
 		78D5EBC12A28317400A239FF /* CheckListTestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListTestTableViewCell.xib; sourceTree = "<group>"; };
 		B7F6CBFB82CB86BE9DDCCB4E /* Pods_DoitDoitChu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoitDoitChu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,9 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				78D5EBB42A2747D400A239FF /* SoloTodoVC.swift */,
-				78D5EBBE2A275A1400A239FF /* SoloTodoTableViewCell.swift */,
 				78A615932A26EF4700FF4888 /* SoloCheckViewController.swift */,
-				78D5EBB62A27483100A239FF /* SoloTodoList.swift */,
 				78D5EBC02A28317400A239FF /* CheckListTestTableViewCell.swift */,
 				78D5EBC12A28317400A239FF /* CheckListTestTableViewCell.xib */,
 			);
@@ -293,8 +287,6 @@
 				78A6159A2A26F4DB00FF4888 /* HistoryViewController.swift in Sources */,
 				785DECF82A286AC200937B27 /* StartTeamViewController.swift in Sources */,
 				78D5EBC22A28317400A239FF /* CheckListTestTableViewCell.swift in Sources */,
-				78D5EBB82A27483100A239FF /* SoloTodoList.swift in Sources */,
-				78D5EBBF2A275A1400A239FF /* SoloTodoTableViewCell.swift in Sources */,
 				78D5EBB52A2747D400A239FF /* SoloTodoVC.swift in Sources */,
 				78A6159E2A26F4F900FF4888 /* TeamCheckvc.swift in Sources */,
 				785DECFA2A28BE9600937B27 /* TeamTodoCharViewController.swift in Sources */,

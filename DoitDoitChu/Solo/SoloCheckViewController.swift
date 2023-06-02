@@ -20,7 +20,12 @@ class SoloCheckViewController: UIViewController {
 
         mainVIew.layer.cornerRadius = 12
         
-    }
+        mainTable.delegate = self
+        mainTable.dataSource = self
+     
+        let nib = UINib(nibName: "CheckListTestTableViewCell", bundle: nil)
+            mainTable.register(nib, forCellReuseIdentifier: "CheckListTestTableViewCell")
+        }
     
 
 
@@ -29,15 +34,13 @@ class SoloCheckViewController: UIViewController {
 extension SoloCheckViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 3
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SoloTodoTableViewCell") as? SoloTodoTableViewCell else {
-            // Create a new cell if there isn't one to reuse
-            return SoloTodoTableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CheckListTestTableViewCell", for: indexPath) as? CheckListTestTableViewCell else {
+            fatalError("The dequeued cell is not an instance of CheckListTestTableViewCell.")
         }
         
         return cell

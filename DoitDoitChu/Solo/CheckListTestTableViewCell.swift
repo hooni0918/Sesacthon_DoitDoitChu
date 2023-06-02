@@ -9,9 +9,17 @@ import UIKit
 
 class CheckListTestTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var checkImage: UIImageView!
+   
+    @IBOutlet weak var TodoListLabel: UILabel!
+ 
+    
+    @IBOutlet weak var moreImfo: UIImageView!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

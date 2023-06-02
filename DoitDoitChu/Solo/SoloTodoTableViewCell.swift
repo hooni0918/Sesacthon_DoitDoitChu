@@ -9,13 +9,6 @@ import UIKit
 
 class SoloTodoTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var checkBtn: UIImageView!
-    
-    @IBOutlet weak var TodoLabel: UILabel!
-    
-    @IBOutlet weak var moreBtn: UIImageView!
-    
-    
     
     
     override func awakeFromNib() {

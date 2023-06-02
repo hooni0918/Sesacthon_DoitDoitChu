@@ -16,14 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2X-YJ-i9P">
-                        <rect key="frame" x="61" y="78" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PN8-Nl-ONq">
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PN8-Nl-ONq">
                         <rect key="frame" x="16" y="17" width="232" height="24"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unCheckSquare" translatesAutoresizingMaskIntoConstraints="NO" id="uFL-aP-K9K">
@@ -54,10 +47,17 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="8Ym-He-PFb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="ekl-vg-1K5"/>
+                    <constraint firstItem="PN8-Nl-ONq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pkT-cG-c4k"/>
+                    <constraint firstItem="PN8-Nl-ONq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="qfd-vw-cJ0"/>
                     <constraint firstAttribute="trailing" secondItem="8Ym-He-PFb" secondAttribute="trailing" constant="16" id="vqj-uT-8tm"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="TodoListLabel" destination="XWm-ti-uBf" id="7hh-6b-nVf"/>
+                <outlet property="checkImage" destination="uFL-aP-K9K" id="vu5-bW-h60"/>
+                <outlet property="moreImfo" destination="8Ym-He-PFb" id="ooQ-z8-YWJ"/>
+            </connections>
             <point key="canvasLocation" x="-41.221374045801525" y="37.323943661971832"/>
         </tableViewCell>
     </objects>
