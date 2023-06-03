@@ -11,17 +11,26 @@ class StartTeamViewController: UIViewController {
 
     @IBOutlet weak var nextView: UIView!
     
+    @IBOutlet weak var PresentImage: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItems()
 
         nextView.layer.cornerRadius = 12
+        
+        shakeAnimation(imageView: PresentImage)
+
+
+        
+        
     }
     
     
     
-    
+    // MARK: - 네비게이션
     private func navigationItems() {
         // 왼쪽 아이템 설정
         let leftImage = UIImage(named: "Group 3")
@@ -42,8 +51,16 @@ class StartTeamViewController: UIViewController {
         self.navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: rightButton1), UIBarButtonItem(customView: rightButton2)]
         
  }
-    
-    
+    func shakeAnimation(imageView: UIImageView) {
+        let animation = CABasicAnimation(keyPath: "position")
+        animation.duration = 0.1
+        animation.repeatCount = 40
+        animation.autoreverses = true
+        animation.fromValue = NSValue(cgPoint: CGPoint(x: imageView.center.x - 30, y: imageView.center.y))
+        animation.toValue = NSValue(cgPoint: CGPoint(x: imageView.center.x + 30, y: imageView.center.y))
+        imageView.layer.add(animation, forKey: "position")
+    }
+
     
     @objc func yourSelector1() {
 

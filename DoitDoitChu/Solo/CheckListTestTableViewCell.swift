@@ -19,6 +19,17 @@ class CheckListTestTableViewCell: UITableViewCell {
     @IBOutlet weak var meatBallButton: UIButton!
     
     
+    // UITextField에 대한 사용자 인터랙션을 활성화하고, 처음에는 편집이 불가능하게 설정
+
+    @IBOutlet weak var todoList: UITextField!{
+    
+   
+            didSet {
+                todoList.isUserInteractionEnabled = false
+                todoList.delegate = self
+            }
+        }
+    
     var isChecked = false
     var buttonAction: (() -> Void)? // 버튼클릭햇을때 액션시트 호출할거
     
@@ -32,6 +43,10 @@ class CheckListTestTableViewCell: UITableViewCell {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         checkImage?.isUserInteractionEnabled = true
         checkImage?.addGestureRecognizer(tapGestureRecognizer)
+        
+        
+        todoList.isUserInteractionEnabled = true 
+
     }
     
     
@@ -55,4 +70,17 @@ class CheckListTestTableViewCell: UITableViewCell {
         }
     }
     
+}
+
+extension CheckListTestTableViewCell: UITextFieldDelegate {
+    // Return 키를 누르면 편집이 종료되도록 설정
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+
+    // 편집이 종료되면 사용자 인터랙션을 비활성화
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.isUserInteractionEnabled = false
+    }
 }

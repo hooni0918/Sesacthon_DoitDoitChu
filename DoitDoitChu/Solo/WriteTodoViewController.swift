@@ -25,13 +25,18 @@ class WriteTodoViewController: UIViewController {
     @IBOutlet weak var newTodoTable: UITableView!
     
     var todos: [String] = []
+    var todo: String?
 
     
     weak var parentVC: SoloCheckViewController?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if let todo = self.todo {
+                  self.NewTodoWrite.text = todo
+              }
         let nib = UINib(nibName: "CheckListTestTableViewCell", bundle: nil)
         newTodoTable.register(nib, forCellReuseIdentifier: "CheckListTestTableViewCell")
 
