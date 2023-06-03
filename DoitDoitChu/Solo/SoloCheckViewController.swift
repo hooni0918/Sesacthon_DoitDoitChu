@@ -15,7 +15,6 @@ class SoloCheckViewController: UIViewController {
     
     @IBOutlet weak var writeImage: UIImageView!
     
-    var todos: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
