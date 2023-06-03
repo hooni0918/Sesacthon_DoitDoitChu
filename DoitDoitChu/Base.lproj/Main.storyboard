@@ -228,7 +228,7 @@
             </objects>
             <point key="canvasLocation" x="3154.9618320610684" y="-1021.1267605633803"/>
         </scene>
-        <!--Write Todo View Controller-->
+        <!--Title-->
         <scene sceneID="Alf-32-5oF">
             <objects>
                 <viewController storyboardIdentifier="WriteTodoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eZi-s5-h6p" customClass="WriteTodoViewController" customModule="DoitDoitChu" customModuleProvider="target" sceneMemberID="viewController">
@@ -236,25 +236,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VE-N8-WmL">
-                                <rect key="frame" x="191" y="259" width="42" height="21"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="     오늘 할 일을 적어주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GM2-8f-aPs">
+                                <rect key="frame" x="20" y="133" width="353" height="44"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="wqQ-fc-Cyj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YVe-Hs-V6L">
+                                <rect key="frame" x="20" y="197" width="345" height="459"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group 3" translatesAutoresizingMaskIntoConstraints="NO" id="mlm-1T-lMI">
-                                <rect key="frame" x="92" y="243" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CheckListTestTableViewCell" id="BY2-4H-Wv6" customClass="CheckListTestTableViewCell" customModule="DoitDoitChu" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="345" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BY2-4H-Wv6" id="nxN-tW-qXy">
+                                            <rect key="frame" x="0.0" y="0.0" width="345" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sik-du-8WJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GM2-8f-aPs" firstAttribute="leading" secondItem="sik-du-8WJ" secondAttribute="leading" constant="20" id="HgO-Ho-pes"/>
+                            <constraint firstItem="sik-du-8WJ" firstAttribute="trailing" secondItem="GM2-8f-aPs" secondAttribute="trailing" constant="20" id="qJY-cp-mB9"/>
+                            <constraint firstItem="GM2-8f-aPs" firstAttribute="top" secondItem="sik-du-8WJ" secondAttribute="top" constant="30" id="wFd-KZ-flD"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="SpZ-j5-BPn"/>
+                    <connections>
+                        <outlet property="NewTodoWrite" destination="GM2-8f-aPs" id="sI5-CJ-OL6"/>
+                        <outlet property="newTodoTable" destination="YVe-Hs-V6L" id="0ga-HI-tW3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6W6-lj-tsw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4024" y="-1021"/>
+            <point key="canvasLocation" x="4248" y="-926"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6zO-ni-64D">
@@ -675,11 +701,28 @@
             </objects>
             <point key="canvasLocation" x="1377.8625954198474" y="665.49295774647885"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HCt-Oh-Ybb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u6Y-rQ-YGm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jpg-e9-yLg">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eZi-s5-h6p" kind="relationship" relationship="rootViewController" id="12o-bZ-H3W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1wo-N2-LPk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4248" y="-1720"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CheckSquare" width="22" height="22"/>
         <image name="Group 11" width="73" height="21"/>
-        <image name="Group 3" width="59.666667938232422" height="23"/>
         <image name="Group 39" width="492" height="450"/>
         <image name="Group 40" width="492" height="450"/>
         <image name="Group 40-1" width="492" height="450"/>

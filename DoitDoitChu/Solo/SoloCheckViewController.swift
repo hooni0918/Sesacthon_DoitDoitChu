@@ -15,7 +15,7 @@ class SoloCheckViewController: UIViewController {
     
     @IBOutlet weak var writeImage: UIImageView!
     
-    
+    var todos: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,14 +54,18 @@ class SoloCheckViewController: UIViewController {
 //        present(nav, animated: true, completion: nil)
 //
 //    }
+    
     @objc func presentModal() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let writeTodoViewController = storyboard.instantiateViewController(withIdentifier: "WriteTodoViewController") as? WriteTodoViewController {
+            
+            writeTodoViewController.parentVC = self  // <-- parentVC 설정
+
             let navigationController = UINavigationController(rootViewController: writeTodoViewController)
             navigationController.modalPresentationStyle = .pageSheet
             
             if let sheet = navigationController.sheetPresentationController {
-                sheet.detents = [.medium(), .large()]
+                sheet.detents = [.large()]
             }
             
             present(navigationController, animated: true, completion: nil)
@@ -88,7 +92,7 @@ class SoloCheckViewController: UIViewController {
 extension SoloCheckViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return todos.count
     }
     
     
@@ -99,8 +103,7 @@ extension SoloCheckViewController : UITableViewDelegate, UITableViewDataSource {
         }
         
       
-        cell.TodoListLabel.text = "애플워치 충전하기"
-
+        cell.TodoListLabel.text = todos[indexPath.row]
         
         cell.buttonAction = {
             
