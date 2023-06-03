@@ -31,6 +31,10 @@ class WriteTodoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let nib = UINib(nibName: "CheckListTestTableViewCell", bundle: nil)
+        newTodoTable.register(nib, forCellReuseIdentifier: "CheckListTestTableViewCell")
+
 
         
         newTodoTable.dataSource = self
@@ -75,21 +79,19 @@ class WriteTodoViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
 
 
+        
     }
     @objc func yourSelector2() {
-        // NewTodoWrite의 내용이 비어있지 않다면
         if let newTodo = NewTodoWrite.text, !newTodo.isEmpty {
-            // parentVC의 todos 배열에 추가하고
-            parentVC?.todos.append(newTodo)
-            // WriteTodoViewController의 todos 배열에도 추가
-            todos.append(newTodo)
-            // UITableView를 갱신합니다.
-            parentVC?.mainTable.reloadData()
-            // WriteTodoViewController의 newTodoTable도 갱신
+            TodoManager.shared.todos.append(newTodo)
             newTodoTable.reloadData()
         }
-        // 이 화면을 닫습니다.
-        self.dismiss(animated: true, completion: nil)
+
+        // dismiss 후에 실행되는 클로저를 추가합니다.
+        self.dismiss(animated: true) {
+            // SoloCheckViewController의 테이블 뷰를 다시 로드합니다.
+            self.parentVC?.mainTable.reloadData()
+        }
     }
 
     
@@ -98,21 +100,16 @@ class WriteTodoViewController: UIViewController {
 extension WriteTodoViewController : UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return todos.count
+        return TodoManager.shared.todos.count
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CheckListTestTableViewCell", for: indexPath) as? CheckListTestTableViewCell else {
             fatalError("The dequeued cell is not an instance of CheckListTestTableViewCell.")
-            
         }
         
-        
-        cell.TodoListLabel?.text = todos[indexPath.row]
+        cell.TodoListLabel?.text = TodoManager.shared.todos[indexPath.row]
         
         return cell
-        
     }
-    
 }

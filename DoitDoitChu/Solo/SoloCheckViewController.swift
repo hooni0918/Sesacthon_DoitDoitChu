@@ -92,19 +92,21 @@ class SoloCheckViewController: UIViewController {
 extension SoloCheckViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return todos.count
+        return TodoManager.shared.todos.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CheckListTestTableViewCell", for: indexPath) as? CheckListTestTableViewCell else {
-            fatalError("The dequeued cell is not an instance of CheckListTestTableViewCell.")
-
-        }
+                fatalError("The dequeued cell is not an instance of CheckListTestTableViewCell.")
+            }
+            
+            cell.TodoListLabel.text = TodoManager.shared.todos[indexPath.row]
+            
         
       
-        cell.TodoListLabel.text = todos[indexPath.row]
-        
+        cell.TodoListLabel.text = TodoManager.shared.todos[indexPath.row]
+
         cell.buttonAction = {
             
             
