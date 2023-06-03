@@ -107,27 +107,41 @@ extension SoloCheckViewController : UITableViewDelegate, UITableViewDataSource {
         cell.TodoListLabel.text = TodoManager.shared.todos[indexPath.row]
 
         cell.buttonAction = {
-            
-            
             let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
             
             let deleteAction = UIAlertAction(title: "삭제하기", style: .destructive, handler: { (action) in
                 // handle delete
+                TodoManager.shared.todos.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .automatic)
             })
             
             let editAction = UIAlertAction(title: "수정하기", style: .default, handler: { (action) in
                 // handle edit
+                let alert = UIAlertController(title: "수정하기", message: nil, preferredStyle: .alert)
+                alert.addTextField(configurationHandler: nil)
+                
+                let confirmAction = UIAlertAction(title: "확인", style: .default) { _ in
+                    if let newText = alert.textFields?.first?.text, !newText.isEmpty {
+                        TodoManager.shared.todos[indexPath.row] = newText
+                        tableView.reloadRows(at: [indexPath], with: .automatic)
+                    }
+                }
+                
+                let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler: nil)
+                alert.addAction(confirmAction)
+                alert.addAction(cancelAction)
+                self.present(alert, animated: true, completion: nil)
             })
             
             let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler: nil)
             
             alertController.addAction(editAction)
             alertController.addAction(deleteAction)
-
             alertController.addAction(cancelAction)
             
             self.present(alertController, animated: true, completion: nil)
         }
+
         
         
         return cell
