@@ -7,4 +7,5 @@ target 'DoitDoitChu' do
 
   # Pods for DoitDoitChu
 
+pod 'Alamofire'
 end
