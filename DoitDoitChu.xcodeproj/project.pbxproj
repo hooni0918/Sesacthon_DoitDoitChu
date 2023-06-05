@@ -13,6 +13,11 @@
 		78543F1E2A24F8A9009D07D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78543F1D2A24F8A9009D07D5 /* SceneDelegate.swift */; };
 		78543F232A24F8A9009D07D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78543F212A24F8A9009D07D5 /* Main.storyboard */; };
 		78543F282A24F8AA009D07D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78543F262A24F8AA009D07D5 /* LaunchScreen.storyboard */; };
+		7856224F2A2CC33E0065B48E /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 7856224E2A2CC33E0065B48E /* GoogleService-Info (1).plist */; };
+		785622512A2CD9D40065B48E /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785622502A2CD9D40065B48E /* CategoryViewController.swift */; };
+		785622532A2CEA750065B48E /* TodoDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785622522A2CEA750065B48E /* TodoDoneViewController.swift */; };
+		785622572A2CEFD80065B48E /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785622562A2CEFD80065B48E /* Lottie.framework */; };
+		7856225C2A2D5C520065B48E /* 85744-success.json in Resources */ = {isa = PBXBuildFile; fileRef = 7856225B2A2D5C520065B48E /* 85744-success.json */; };
 		785DECF82A286AC200937B27 /* StartTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785DECF72A286AC200937B27 /* StartTeamViewController.swift */; };
 		785DECFA2A28BE9600937B27 /* TeamTodoCharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785DECF92A28BE9600937B27 /* TeamTodoCharViewController.swift */; };
 		78A6158A2A26E37B00FF4888 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78A615812A26E37A00FF4888 /* Pretendard-Regular.otf */; };
@@ -45,6 +50,11 @@
 		78543F222A24F8A9009D07D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78543F272A24F8AA009D07D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78543F292A24F8AA009D07D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7856224E2A2CC33E0065B48E /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		785622502A2CD9D40065B48E /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		785622522A2CEA750065B48E /* TodoDoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDoneViewController.swift; sourceTree = "<group>"; };
+		785622562A2CEFD80065B48E /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7856225B2A2D5C520065B48E /* 85744-success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "85744-success.json"; sourceTree = "<group>"; };
 		785DECF72A286AC200937B27 /* StartTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTeamViewController.swift; sourceTree = "<group>"; };
 		785DECF92A28BE9600937B27 /* TeamTodoCharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTodoCharViewController.swift; sourceTree = "<group>"; };
 		78A615812A26E37A00FF4888 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
@@ -71,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785622572A2CEFD80065B48E /* Lottie.framework in Frameworks */,
 				AFDF4A71C1654CE347D1BFC6 /* Pods_DoitDoitChu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +92,7 @@
 		64A73CEBCEDA451E51FDE0C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				785622562A2CEFD80065B48E /* Lottie.framework */,
 				B7F6CBFB82CB86BE9DDCCB4E /* Pods_DoitDoitChu.framework */,
 			);
 			name = Frameworks;
@@ -133,6 +145,8 @@
 				781A23202A263EB100A0B629 /* Assets.xcassets */,
 				78543F262A24F8AA009D07D5 /* LaunchScreen.storyboard */,
 				78543F292A24F8AA009D07D5 /* Info.plist */,
+				7856224E2A2CC33E0065B48E /* GoogleService-Info (1).plist */,
+				7856225B2A2D5C520065B48E /* 85744-success.json */,
 			);
 			path = DoitDoitChu;
 			sourceTree = "<group>";
@@ -156,6 +170,8 @@
 				78A6159D2A26F4F900FF4888 /* TeamCheckvc.swift */,
 				785DECF72A286AC200937B27 /* StartTeamViewController.swift */,
 				785DECF92A28BE9600937B27 /* TeamTodoCharViewController.swift */,
+				785622502A2CD9D40065B48E /* CategoryViewController.swift */,
+				785622522A2CEA750065B48E /* TodoDoneViewController.swift */,
 			);
 			path = Team;
 			sourceTree = "<group>";
@@ -195,6 +211,8 @@
 			dependencies = (
 			);
 			name = DoitDoitChu;
+			packageProductDependencies = (
+			);
 			productName = DoitDoitChu;
 			productReference = 78543F182A24F8A9009D07D5 /* DoitDoitChu.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +241,8 @@
 				Base,
 			);
 			mainGroup = 78543F0F2A24F8A9009D07D5;
+			packageReferences = (
+			);
 			productRefGroup = 78543F192A24F8A9009D07D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -246,10 +266,12 @@
 				78A6158E2A26E37B00FF4888 /* Pretendard-Medium.otf in Resources */,
 				78A6158A2A26E37B00FF4888 /* Pretendard-Regular.otf in Resources */,
 				78A615912A26E37B00FF4888 /* Pretendard-Black.otf in Resources */,
+				7856225C2A2D5C520065B48E /* 85744-success.json in Resources */,
 				78A6158D2A26E37B00FF4888 /* Pretendard-Light.otf in Resources */,
 				781A23212A263EB100A0B629 /* Assets.xcassets in Resources */,
 				78A6158F2A26E37B00FF4888 /* Pretendard-Bold.otf in Resources */,
 				78543F232A24F8A9009D07D5 /* Main.storyboard in Resources */,
+				7856224F2A2CC33E0065B48E /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,9 +328,11 @@
 				78543F1C2A24F8A9009D07D5 /* AppDelegate.swift in Sources */,
 				78A615942A26EF4700FF4888 /* SoloCheckViewController.swift in Sources */,
 				781496DF2A29FFE900B7C89D /* WriteTodoViewController.swift in Sources */,
+				785622512A2CD9D40065B48E /* CategoryViewController.swift in Sources */,
 				78A6159A2A26F4DB00FF4888 /* HistoryViewController.swift in Sources */,
 				785DECF82A286AC200937B27 /* StartTeamViewController.swift in Sources */,
 				78D5EBC22A28317400A239FF /* CheckListTestTableViewCell.swift in Sources */,
+				785622532A2CEA750065B48E /* TodoDoneViewController.swift in Sources */,
 				78D5EBB52A2747D400A239FF /* SoloTodoVC.swift in Sources */,
 				78A6159E2A26F4F900FF4888 /* TeamCheckvc.swift in Sources */,
 				785DECFA2A28BE9600937B27 /* TeamTodoCharViewController.swift in Sources */,

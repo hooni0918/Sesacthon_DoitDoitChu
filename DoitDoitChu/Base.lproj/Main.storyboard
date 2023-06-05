@@ -308,6 +308,40 @@
             </objects>
             <point key="canvasLocation" x="-337" y="-122"/>
         </scene>
+        <!--Todo Done View Controller-->
+        <scene sceneID="aOU-wq-t1v">
+            <objects>
+                <viewController storyboardIdentifier="TodoDoneViewController" modalPresentationStyle="fullScreen" id="wEb-uc-aet" customClass="TodoDoneViewController" customModule="DoitDoitChu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GuU-8x-gfK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U59-Bt-gCD" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="85744-success"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T1u-N7-6px"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U59-Bt-gCD" firstAttribute="bottom" secondItem="T1u-N7-6px" secondAttribute="bottom" id="EPI-Qo-NA0"/>
+                            <constraint firstItem="U59-Bt-gCD" firstAttribute="top" secondItem="T1u-N7-6px" secondAttribute="top" id="YG7-f5-iCK"/>
+                            <constraint firstItem="U59-Bt-gCD" firstAttribute="centerX" secondItem="GuU-8x-gfK" secondAttribute="centerX" id="aAd-nq-A5s"/>
+                            <constraint firstItem="U59-Bt-gCD" firstAttribute="leading" secondItem="T1u-N7-6px" secondAttribute="leading" id="h0p-9Q-59q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SY9-2Q-8zY"/>
+                    <connections>
+                        <outlet property="AnimatedView" destination="U59-Bt-gCD" id="ZCB-m1-keO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTx-2k-2MU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6501.5267175572517" y="-75.352112676056336"/>
+        </scene>
         <!--Team TodoVC-->
         <scene sceneID="Qut-r7-W6s">
             <objects>
@@ -388,7 +422,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fZ-vr-CO5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7286" y="-71"/>
+            <point key="canvasLocation" x="7305" y="-729"/>
         </scene>
         <!--Team Checkvc-->
         <scene sceneID="5WZ-rC-I7D">
@@ -404,7 +438,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vfi-9g-oMi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8176" y="-123"/>
+            <point key="canvasLocation" x="8195" y="-781"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9se-hG-kfE">
@@ -531,10 +565,10 @@
             </objects>
             <point key="canvasLocation" x="2533.5877862595421" y="-71.126760563380287"/>
         </scene>
-        <!--View Controller-->
+        <!--Category View Controller-->
         <scene sceneID="TUh-BM-J0k">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="hYr-OK-mhE" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="hYr-OK-mhE" customClass="CategoryViewController" customModule="DoitDoitChu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZPb-sv-bez">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -612,7 +646,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="n5Q-nE-0w8" kind="show" id="DWp-Ub-kgO"/>
+                                    <segue destination="wEb-uc-aet" kind="show" id="MrW-j2-lgM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -626,63 +660,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" style="editor" id="6lR-oj-eFI"/>
+                    <connections>
+                        <outlet property="bobImage" destination="dcr-A6-CeI" id="Lz7-rg-lat"/>
+                        <outlet property="challengeImage" destination="Ncs-W5-Vsa" id="Ofb-34-tfC"/>
+                        <outlet property="exerciseImage" destination="9po-j2-Snj" id="wHI-57-h7K"/>
+                        <outlet property="feelImage" destination="DX7-CW-eJK" id="aQn-SO-hn5"/>
+                        <outlet property="relationshipImage" destination="kWu-N9-QAd" id="CCJ-RN-Qu4"/>
+                        <outlet property="sleepImage" destination="80E-uc-FB0" id="dQW-hb-SWm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wz0-t1-W8G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3518.320610687023" y="-71.126760563380287"/>
-        </scene>
-        <!--Team Checkvc-->
-        <scene sceneID="rSs-l6-fH7">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="n5Q-nE-0w8" customClass="TeamCheckvc" customModule="DoitDoitChu" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Nzw-oV-3j1">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAu-dT-yaA">
-                                <rect key="frame" x="0.0" y="126" width="393" height="337"/>
-                                <subviews>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="eM3-5n-SLI">
-                                        <rect key="frame" x="138" y="303" width="116" height="26"/>
-                                    </pageControl>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="eM3-5n-SLI" firstAttribute="bottom" secondItem="vAu-dT-yaA" secondAttribute="bottomMargin" id="1FS-dR-LJd"/>
-                                    <constraint firstItem="Cl4-2f-LYb" firstAttribute="bottom" secondItem="eM3-5n-SLI" secondAttribute="bottom" constant="8" id="AyC-6G-9M4"/>
-                                    <constraint firstItem="eM3-5n-SLI" firstAttribute="centerX" secondItem="vAu-dT-yaA" secondAttribute="centerX" id="Ctb-8o-zY6"/>
-                                    <constraint firstItem="eM3-5n-SLI" firstAttribute="top" secondItem="Cl4-2f-LYb" secondAttribute="top" constant="303" id="ONh-m9-tKp"/>
-                                    <constraint firstItem="eM3-5n-SLI" firstAttribute="leading" secondItem="Cl4-2f-LYb" secondAttribute="leading" constant="138" id="ocT-o5-Nii"/>
-                                    <constraint firstAttribute="trailing" secondItem="eM3-5n-SLI" secondAttribute="trailing" constant="139" id="sec-Q8-vpc"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="dSW-4Y-k7y"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="Cl4-2f-LYb"/>
-                            </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wj6-XV-fHD">
-                                <rect key="frame" x="20" y="517" width="353" height="212"/>
-                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="2Cg-w6-SgW"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="2Cg-w6-SgW" firstAttribute="trailing" secondItem="Wj6-XV-fHD" secondAttribute="trailing" constant="20" id="6Bi-yw-0JL"/>
-                            <constraint firstItem="2Cg-w6-SgW" firstAttribute="bottom" secondItem="Wj6-XV-fHD" secondAttribute="bottom" constant="40" id="CPP-Wd-cE1"/>
-                            <constraint firstItem="vAu-dT-yaA" firstAttribute="leading" secondItem="2Cg-w6-SgW" secondAttribute="leading" id="Hv8-NS-4yw"/>
-                            <constraint firstItem="vAu-dT-yaA" firstAttribute="centerX" secondItem="Wj6-XV-fHD" secondAttribute="centerX" id="hzd-RA-CLR"/>
-                            <constraint firstItem="Wj6-XV-fHD" firstAttribute="leading" secondItem="2Cg-w6-SgW" secondAttribute="leading" constant="20" id="lCV-IS-vQb"/>
-                            <constraint firstItem="Wj6-XV-fHD" firstAttribute="top" secondItem="vAu-dT-yaA" secondAttribute="bottom" constant="54" id="qsZ-lb-gM3"/>
-                            <constraint firstItem="vAu-dT-yaA" firstAttribute="top" secondItem="2Cg-w6-SgW" secondAttribute="top" constant="23" id="yC6-1F-gy7"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="fiG-xu-Gk6"/>
-                    <connections>
-                        <outlet property="pageControl" destination="eM3-5n-SLI" id="CP2-zd-gZF"/>
-                        <outlet property="scrollView" destination="vAu-dT-yaA" id="7KS-DJ-IQf"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lRV-Qd-JvB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4994.6564885496182" y="-123.23943661971832"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ddS-7H-jhB">
@@ -722,6 +711,9 @@
             <point key="canvasLocation" x="4248" y="-1720"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="U59-Bt-gCD"/>
+    </designables>
     <resources>
         <image name="CheckSquare" width="22" height="22"/>
         <image name="Group 11" width="73" height="21"/>

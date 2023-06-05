@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1071423143772-77ln3o48ks6dki4oslh36c0cd7rv5bu2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1071423143772-77ln3o48ks6dki4oslh36c0cd7rv5bu2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCV8o0AiHXyTbT3LpjNSRfH0Hz9z1oIsBA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1071423143772</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>yizi.DoitDoitChu</string>
+	<key>PROJECT_ID</key>
+	<string>sessekton</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sessekton.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1071423143772:ios:bf191d14da408104858b99</string>
+</dict>
+</plist>

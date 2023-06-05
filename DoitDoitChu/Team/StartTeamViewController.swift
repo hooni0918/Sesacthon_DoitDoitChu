@@ -13,18 +13,23 @@ class StartTeamViewController: UIViewController {
     
     @IBOutlet weak var PresentImage: UIImageView!
     
+    var isDayImage: Bool = true
+
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
-        navigationItems()
         
-        nextView.layer.cornerRadius = 12
-        
-        shakeAnimation(imageView: PresentImage)
-        
-        
-        
+               navigationItems()
+               
+               nextView.layer.cornerRadius = 12
+               
+          //     shakeAnimation(imageView: PresentImage)
+               
+               let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+               PresentImage.addGestureRecognizer(tapGesture)
+               PresentImage.isUserInteractionEnabled = true
         
     }
     
@@ -52,41 +57,55 @@ class StartTeamViewController: UIViewController {
         
     }
     
-    //짬뽕
-    func shakeAnimation(imageView: UIImageView) {
-        
-    // Position Animation
-    let positionAnimation = CABasicAnimation(keyPath: "position")
-    positionAnimation.fromValue = NSValue(cgPoint: CGPoint(x: 250, y: 250))
-    positionAnimation.toValue = NSValue(cgPoint: CGPoint(x: 120, y: 130))
+    @objc func imageTapped() {
+        if isDayImage {
+            isDayImage = false
+            let toImage = UIImage(named: "TeamGift")
+            UIView.transition(with: PresentImage, duration: 0.3, options: .transitionFlipFromLeft, animations: { self.PresentImage.image = toImage }, completion: nil)
+        }
+        else {
+            isDayImage = true
+            let toImage = UIImage(named: "Rectangle 611")
+            UIView.transition(with: PresentImage, duration: 0.3, options: .transitionFlipFromLeft, animations: { self.PresentImage.image = toImage }, completion: nil)
+        }
+    }
+
+
     
-    // Scale Animation
-    let scaleAnimation = CABasicAnimation(keyPath: "transform.scale")
-    scaleAnimation.fromValue = 1.0
-    scaleAnimation.toValue = 10.0
-    
-    // Rotation Animation
-    let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation")
-    rotationAnimation.fromValue = 0
-    rotationAnimation.toValue = Double.pi * 200
-    
-    // Opacity Animation
-    let opacityAnimation = CABasicAnimation(keyPath: "opacity")
-    opacityAnimation.fromValue = 1.0
-    opacityAnimation.toValue = 0.0
-    
-    // Animation Group
-    let animationGroup = CAAnimationGroup()
-    animationGroup.animations = [positionAnimation, scaleAnimation, rotationAnimation, opacityAnimation]
-    animationGroup.duration = 10 // 모든 애니메이션을 1초 동안 수행
-    animationGroup.fillMode = .forwards // 애니메이션 완료 후 상태 유지
-    animationGroup.isRemovedOnCompletion = false // 애니메이션 완료 후 제거하지 않음
-    
-    // Add Animation Group to the View's Layer
-        imageView.layer.add(animationGroup, forKey: "myAnimationGroup")
-}
-    
-    //투명해지기
+//    //짬뽕
+//    func shakeAnimation(imageView: UIImageView) {
+//
+//    // Position Animation
+//    let positionAnimation = CABasicAnimation(keyPath: "position")
+//    positionAnimation.fromValue = NSValue(cgPoint: CGPoint(x: 250, y: 250))
+//    positionAnimation.toValue = NSValue(cgPoint: CGPoint(x: 120, y: 130))
+//
+//    // Scale Animation
+//    let scaleAnimation = CABasicAnimation(keyPath: "transform.scale")
+//    scaleAnimation.fromValue = 1.0
+//    scaleAnimation.toValue = 10.0
+//
+//    // Rotation Animation
+//    let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation")
+//    rotationAnimation.fromValue = 0
+//    rotationAnimation.toValue = Double.pi * 200
+//
+//    // Opacity Animation
+//    let opacityAnimation = CABasicAnimation(keyPath: "opacity")
+//    opacityAnimation.fromValue = 1.0
+//    opacityAnimation.toValue = 0.0
+//
+//    // Animation Group
+//    let animationGroup = CAAnimationGroup()
+//    animationGroup.animations = [positionAnimation, scaleAnimation, rotationAnimation, opacityAnimation]
+//    animationGroup.duration = 10 // 모든 애니메이션을 1초 동안 수행
+//    animationGroup.fillMode = .forwards // 애니메이션 완료 후 상태 유지
+//    animationGroup.isRemovedOnCompletion = false // 애니메이션 완료 후 제거하지 않음
+//
+//        imageView.layer.add(animationGroup, forKey: "myAnimationGroup")
+//}
+//
+//    투명해지기
 //    func shakeAnimation(imageView: UIImageView) {
 //
 //        let animation = CABasicAnimation(keyPath: "opacity")

@@ -8,4 +8,9 @@ target 'DoitDoitChu' do
   # Pods for DoitDoitChu
 
 pod 'Alamofire'
+
+pod 'FirebaseAnalytics'
+pod 'FirebaseAuth'
+pod 'FirebaseFirestore'
+pod 'lottie-ios'
 end
