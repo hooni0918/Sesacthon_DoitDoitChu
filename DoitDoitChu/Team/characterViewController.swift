@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+
 
 class characterViewController: UIViewController {
 
@@ -14,6 +16,9 @@ class characterViewController: UIViewController {
     
     @IBOutlet weak var TodoView: UIView!
     
+    @IBOutlet weak var TodoLabel: UILabel!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +26,25 @@ class characterViewController: UIViewController {
         navigationItems()
 
         TodoView.layer.cornerRadius = 12
+        
+        // Alamofire를 사용해서 서버에서 데이터를 가져오는 코드
+           let url = "https://port-0-doit-backend-das6e2dlig0er28.sel4.cloudtype.app/teamTodo/1/4/1"
+           AF.request(url).responseJSON { response in
+               switch response.result {
+               case .success(let data):
+                   do {
+                       let jsonData = try JSONSerialization.data(withJSONObject: data, options: .prettyPrinted)
+                       let decodedData = try JSONDecoder().decode(TeamTodoLabel.self, from: jsonData)
+                       DispatchQueue.main.async {
+                           self.TodoLabel.text = decodedData.recommendTodo
+                       }
+                   } catch let error {
+                       print(error)
+                   }
+               case .failure(let error):
+                   print(error)
+               }
+           }
     }
     
     private func navigationItems() {

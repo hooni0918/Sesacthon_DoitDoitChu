@@ -20,28 +20,28 @@ class CategoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let images: [UIImageView] = [relationshipImage, challengeImage, exerciseImage, bobImage, sleepImage, feelImage]
-        for image in images {
-            isImageFlipped[image] = true
-            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped(_:)))
-            image.addGestureRecognizer(tapGesture)
-            image.isUserInteractionEnabled = true
+//        let images: [UIImageView] = [relationshipImage, challengeImage, exerciseImage, bobImage, sleepImage, feelImage]
+//        for image in images {
+//            isImageFlipped[image] = true
+//            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageTapped(_:)))
+//            image.addGestureRecognizer(tapGesture)
+//            image.isUserInteractionEnabled = true
         }
     }
+//
+//    @objc func imageTapped(_ sender: UITapGestureRecognizer) {
+//        if let imageView = sender.view as? UIImageView {
+//            if isImageFlipped[imageView] ?? false {
+//                isImageFlipped[imageView] = false
+//                let toImage = UIImage(named: "Rectangle 611")
+//                UIView.transition(with: imageView, duration: 0.3, options: .transitionFlipFromLeft, animations: { imageView.image = toImage }, completion: nil)
+//            } else {
+//                isImageFlipped[imageView] = true
+//                let toImage = UIImage(named: "OriginalImage")
+//                UIView.transition(with: imageView, duration: 0.3, options: .transitionFlipFromLeft, animations: { imageView.image = toImage }, completion: nil)
+//            }
+//        }
+//    }
 
-    @objc func imageTapped(_ sender: UITapGestureRecognizer) {
-        if let imageView = sender.view as? UIImageView {
-            if isImageFlipped[imageView] ?? false {
-                isImageFlipped[imageView] = false
-                let toImage = UIImage(named: "Rectangle 611")
-                UIView.transition(with: imageView, duration: 0.3, options: .transitionFlipFromLeft, animations: { imageView.image = toImage }, completion: nil)
-            } else {
-                isImageFlipped[imageView] = true
-                let toImage = UIImage(named: "OriginalImage")
-                UIView.transition(with: imageView, duration: 0.3, options: .transitionFlipFromLeft, animations: { imageView.image = toImage }, completion: nil)
-            }
-        }
-    }
-}
 
 
