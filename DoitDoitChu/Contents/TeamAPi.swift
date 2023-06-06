@@ -7,23 +7,31 @@
 
 import Foundation
 
-// MARK: - TeamTodoLabel
-struct TeamTodoLabel: Decodable {
-    let teamID: Int?
-    let recommendTodo: String?
-    let characterLevel, characterMaxLevel: Int?
-    let createDate: String?
+// MARK: - TeamTodoResponse
+struct TeamTodoResponse: Decodable {
+    let teamInfoList: [TeamInfo]
+}
+
+// MARK: - TeamInfo
+struct TeamInfo: Decodable {
+    let teamId: Int
+    let recommendTodo: String
+    let characterLevel: Int
+    let characterMaxLevel: Int
+    let createDate: String
 }
 
 
-struct User: Decodable {
-    let userId: Int
-    let nickname: String
-    let token: String
-    let checked: Bool
+
+
+struct TeamUser: Decodable {
+    var nickname: String
+    var checked: Bool
+    // other properties according to your actual server response...
 }
 
 struct Response: Decodable {
-    let teamUserDataList: [User]
-    let recommendTodo: String
+    var recommendTodo: String
+    var teamUserDataList: [TeamUser]
+    // other properties according to your actual server response...
 }

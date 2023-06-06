@@ -28,23 +28,19 @@ class characterViewController: UIViewController {
         TodoView.layer.cornerRadius = 12
         
         // Alamofire를 사용해서 서버에서 데이터를 가져오는 코드
-           let url = "https://port-0-doit-backend-das6e2dlig0er28.sel4.cloudtype.app/teamTodo/1/4/1"
-           AF.request(url).responseJSON { response in
-               switch response.result {
-               case .success(let data):
-                   do {
-                       let jsonData = try JSONSerialization.data(withJSONObject: data, options: .prettyPrinted)
-                       let decodedData = try JSONDecoder().decode(TeamTodoLabel.self, from: jsonData)
-                       DispatchQueue.main.async {
-                           self.TodoLabel.text = decodedData.recommendTodo
-                       }
-                   } catch let error {
-                       print(error)
-                   }
-               case .failure(let error):
-                   print(error)
-               }
-           }
+           let url = "https://port-0-doit-backend-das6e2dlig0er28.sel4.cloudtype.app/teamTodo/4"
+           
+        AF.request(url).responseDecodable(of: TeamTodoResponse.self) { response in
+            switch response.result {
+            case .success(let data):
+                DispatchQueue.main.async {
+                    self.TodoLabel.text = data.teamInfoList.first?.recommendTodo
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
+
     }
     
     private func navigationItems() {
