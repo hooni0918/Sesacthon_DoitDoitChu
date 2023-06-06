@@ -13,4 +13,9 @@ pod 'FirebaseAnalytics'
 pod 'FirebaseAuth'
 pod 'FirebaseFirestore'
 pod 'lottie-ios'
+pod 'DropDown'
+
+
+
+
 end

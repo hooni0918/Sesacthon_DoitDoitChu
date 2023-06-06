@@ -10,6 +10,7 @@
 		7814226C2A2D69AA006DDF3A /* characterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814226B2A2D69AA006DDF3A /* characterViewController.swift */; };
 		7814226E2A2DB4DB006DDF3A /* SelectCharaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814226D2A2DB4DB006DDF3A /* SelectCharaterViewController.swift */; };
 		781422702A2DB4F2006DDF3A /* MyTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814226F2A2DB4F2006DDF3A /* MyTodoViewController.swift */; };
+		781422782A2F01AD006DDF3A /* DetailTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781422772A2F01AD006DDF3A /* DetailTodoViewController.swift */; };
 		781496DF2A29FFE900B7C89D /* WriteTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781496DE2A29FFE900B7C89D /* WriteTodoViewController.swift */; };
 		781A23212A263EB100A0B629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 781A23202A263EB100A0B629 /* Assets.xcassets */; };
 		78543F1C2A24F8A9009D07D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78543F1B2A24F8A9009D07D5 /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 		7814226B2A2D69AA006DDF3A /* characterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = characterViewController.swift; sourceTree = "<group>"; };
 		7814226D2A2DB4DB006DDF3A /* SelectCharaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCharaterViewController.swift; sourceTree = "<group>"; };
 		7814226F2A2DB4F2006DDF3A /* MyTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTodoViewController.swift; sourceTree = "<group>"; };
+		781422772A2F01AD006DDF3A /* DetailTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTodoViewController.swift; sourceTree = "<group>"; };
 		781496DE2A29FFE900B7C89D /* WriteTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteTodoViewController.swift; sourceTree = "<group>"; };
 		781A23202A263EB100A0B629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78543F182A24F8A9009D07D5 /* DoitDoitChu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoitDoitChu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +181,7 @@
 				785622502A2CD9D40065B48E /* CategoryViewController.swift */,
 				785622522A2CEA750065B48E /* TodoDoneViewController.swift */,
 				7814226B2A2D69AA006DDF3A /* characterViewController.swift */,
+				781422772A2F01AD006DDF3A /* DetailTodoViewController.swift */,
 			);
 			path = Team;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				781496DF2A29FFE900B7C89D /* WriteTodoViewController.swift in Sources */,
 				785622512A2CD9D40065B48E /* CategoryViewController.swift in Sources */,
 				78A6159A2A26F4DB00FF4888 /* HistoryVC.swift in Sources */,
+				781422782A2F01AD006DDF3A /* DetailTodoViewController.swift in Sources */,
 				7814226E2A2DB4DB006DDF3A /* SelectCharaterViewController.swift in Sources */,
 				785DECF82A286AC200937B27 /* StartTeamViewController.swift in Sources */,
 				78D5EBC22A28317400A239FF /* CheckListTestTableViewCell.swift in Sources */,

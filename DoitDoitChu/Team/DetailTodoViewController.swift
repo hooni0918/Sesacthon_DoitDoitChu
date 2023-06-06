@@ -9,21 +9,20 @@ import UIKit
 
 class DetailTodoViewController: UIViewController {
 
+    @IBOutlet weak var TodayView: UIView!
+    
+    @IBOutlet weak var TeamWork: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        TodayView.layer.cornerRadius = 12
+        TeamWork.layer.cornerRadius = 12
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
