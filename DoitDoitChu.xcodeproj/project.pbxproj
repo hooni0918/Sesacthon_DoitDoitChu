@@ -38,6 +38,7 @@
 		78A6159A2A26F4DB00FF4888 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A615992A26F4DB00FF4888 /* HistoryVC.swift */; };
 		78A6159C2A26F4ED00FF4888 /* TeamTodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6159B2A26F4ED00FF4888 /* TeamTodoVC.swift */; };
 		78A6159E2A26F4F900FF4888 /* TeamCheckvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6159D2A26F4F900FF4888 /* TeamCheckvc.swift */; };
+		78AD94602A308E5300105009 /* OpenCharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AD945F2A308E5300105009 /* OpenCharViewController.swift */; };
 		78D5EBB52A2747D400A239FF /* SoloTodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D5EBB42A2747D400A239FF /* SoloTodoVC.swift */; };
 		78D5EBC22A28317400A239FF /* CheckListTestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D5EBC02A28317400A239FF /* CheckListTestTableViewCell.swift */; };
 		78D5EBC32A28317400A239FF /* CheckListTestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78D5EBC12A28317400A239FF /* CheckListTestTableViewCell.xib */; };
@@ -80,6 +81,7 @@
 		78A615992A26F4DB00FF4888 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 		78A6159B2A26F4ED00FF4888 /* TeamTodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTodoVC.swift; sourceTree = "<group>"; };
 		78A6159D2A26F4F900FF4888 /* TeamCheckvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCheckvc.swift; sourceTree = "<group>"; };
+		78AD945F2A308E5300105009 /* OpenCharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCharViewController.swift; sourceTree = "<group>"; };
 		78D5EBB42A2747D400A239FF /* SoloTodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloTodoVC.swift; sourceTree = "<group>"; };
 		78D5EBC02A28317400A239FF /* CheckListTestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListTestTableViewCell.swift; sourceTree = "<group>"; };
 		78D5EBC12A28317400A239FF /* CheckListTestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListTestTableViewCell.xib; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				78A615932A26EF4700FF4888 /* SoloCheckViewController.swift */,
 				78D5EBC02A28317400A239FF /* CheckListTestTableViewCell.swift */,
 				78D5EBC12A28317400A239FF /* CheckListTestTableViewCell.xib */,
+				78AD945F2A308E5300105009 /* OpenCharViewController.swift */,
 			);
 			path = Solo;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				785DECFA2A28BE9600937B27 /* TeamTodoCharViewController.swift in Sources */,
 				7814226C2A2D69AA006DDF3A /* characterViewController.swift in Sources */,
 				78543F1E2A24F8A9009D07D5 /* SceneDelegate.swift in Sources */,
+				78AD94602A308E5300105009 /* OpenCharViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

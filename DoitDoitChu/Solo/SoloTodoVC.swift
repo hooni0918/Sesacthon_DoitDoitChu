@@ -9,10 +9,10 @@ import UIKit
 
 class SoloTodoVC: UIViewController {
 
-    @IBOutlet weak var checterView: UIView!
     
     @IBOutlet weak var todoView: UIView!
     
+    @IBOutlet weak var openBtn: UIButton!
     
     
     override func viewDidLoad() {
@@ -21,7 +21,8 @@ class SoloTodoVC: UIViewController {
         
        
         navigationItems()
-        checterView.layer.cornerRadius = 12
+
+
         todoView.layer.cornerRadius = 12
         
             }

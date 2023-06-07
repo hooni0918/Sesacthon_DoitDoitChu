@@ -15,6 +15,10 @@ class MyTodoViewController: UIViewController {
 
     @IBOutlet weak var New: UIButton!
     
+    @IBOutlet weak var allView: UIView!
+    
+    @IBOutlet weak var newView: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +56,13 @@ class MyTodoViewController: UIViewController {
             New.menu = menu2
             // 버튼 클릭시 메뉴가 나타나게 설정
             New.showsMenuAsPrimaryAction = true
+        
+        
+        allView.layer.borderWidth = 1
+        allView.layer.cornerRadius = 20
+        
+        newView.layer.borderWidth = 1
+        newView.layer.cornerRadius = 20
         
             }
     

@@ -14,11 +14,10 @@ class SelectCharaterViewController: UIViewController {
     
     @IBOutlet weak var New: UIButton!
     
-    
     @IBOutlet weak var allView: UIView!
     
     
-    
+    @IBOutlet weak var newView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -56,30 +55,14 @@ class SelectCharaterViewController: UIViewController {
         // 버튼 클릭시 메뉴가 나타나게 설정
         New.showsMenuAsPrimaryAction = true
         
+        //        allView.layer.borderWidth = 2
+        //        allView.layer.borderColor = UIColor(red: 0.58, green: 0.58, blue: 0.58, alpha: 1).cgColor
         
+        allView.layer.borderWidth = 1
+        allView .layer.cornerRadius = 20
         
-        
-        allView.layer.borderWidth = 2
-        allView.layer.borderColor = UIColor(red: 0.58, green: 0.58, blue: 0.58, alpha: 1).cgColor
-        // allView.layer.cornerRadius = 34
-        
+        newView.layer.borderWidth = 1
+        newView.layer.cornerRadius = 20
         
     }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
-        // 운동장 모양 path 생성
-        let ovalPath = UIBezierPath(roundedRect: allView.bounds, byRoundingCorners: .allCorners, cornerRadii: CGSize(width: allView.bounds.height / 2, height: allView.bounds.height / 2))
-        
-        // mask layer 생성
-        let maskLayer = CAShapeLayer()
-        maskLayer.path = ovalPath.cgPath
-        
-        // mask 적용
-        allView.layer.mask = maskLayer
-    }
-    
-    
 }
-  
