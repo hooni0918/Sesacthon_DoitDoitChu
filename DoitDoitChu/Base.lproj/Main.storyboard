@@ -491,6 +491,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ly5-tN-Y0F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="ZGq-iB-qKL" firstAttribute="leading" secondItem="Ly5-tN-Y0F" secondAttribute="leading" id="ZCY-aW-MtR"/>
                             <constraint firstItem="Ly5-tN-Y0F" firstAttribute="bottom" secondItem="ZGq-iB-qKL" secondAttribute="bottom" constant="635" id="fVh-et-uIb"/>
@@ -498,7 +499,9 @@
                             <constraint firstItem="Ly5-tN-Y0F" firstAttribute="trailing" secondItem="ZGq-iB-qKL" secondAttribute="trailing" id="nEv-Wa-YB6"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uh8-Xj-SjC"/>
+                    <navigationItem key="navigationItem" style="editor" id="uh8-Xj-SjC">
+                        <barButtonItem key="backBarButtonItem" title="ㅤ" id="m0E-3u-nkd"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="segmentedControl" destination="ZGq-iB-qKL" id="Jen-6g-WHR"/>
                     </connections>
@@ -651,7 +654,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4UW-8q-QtD">
                                         <rect key="frame" x="0.0" y="0.0" width="183" height="238"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
                                         <connections>
                                             <segue destination="baq-Tt-i6f" kind="show" id="WJ6-yt-kv8"/>
                                         </connections>
@@ -659,7 +662,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hci-uP-qGM">
                                         <rect key="frame" x="183" y="0.0" width="174" height="238"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
                                         <connections>
                                             <segue destination="MhI-c1-Xrb" kind="show" id="jUc-v2-pkk"/>
                                         </connections>
@@ -742,7 +745,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Challenge" translatesAutoresizingMaskIntoConstraints="NO" id="3Gx-A0-Bpz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 150" translatesAutoresizingMaskIntoConstraints="NO" id="3Gx-A0-Bpz">
                                 <rect key="frame" x="20" y="144" width="353" height="564"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="564" id="M7f-Kz-kMM"/>
@@ -752,6 +755,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ias-i8-yrn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3Gx-A0-Bpz" firstAttribute="centerX" secondItem="ujj-bg-fXh" secondAttribute="centerX" id="tlq-9U-BPx"/>
                             <constraint firstItem="3Gx-A0-Bpz" firstAttribute="centerY" secondItem="ujj-bg-fXh" secondAttribute="centerY" id="zg6-ca-uTw"/>
@@ -771,7 +775,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 147" translatesAutoresizingMaskIntoConstraints="NO" id="vIb-Lw-pG0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 149" translatesAutoresizingMaskIntoConstraints="NO" id="vIb-Lw-pG0">
                                 <rect key="frame" x="20" y="144" width="353" height="564"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="564" id="8FO-xb-HJs"/>
@@ -781,12 +785,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WrW-yh-vTv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vIb-Lw-pG0" firstAttribute="centerX" secondItem="kZB-09-CK5" secondAttribute="centerX" id="Wus-dN-fJc"/>
                             <constraint firstItem="vIb-Lw-pG0" firstAttribute="centerY" secondItem="kZB-09-CK5" secondAttribute="centerY" id="pyC-2E-mCU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JI5-H3-Xwa"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1WF-ON-a2Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1434,6 +1440,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="h30-f8-y9P">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1468,7 +1475,6 @@
     </designables>
     <resources>
         <image name="CalendarCheck" width="60" height="60"/>
-        <image name="Challenge" width="990" height="1548"/>
         <image name="CheckSquare" width="22" height="22"/>
         <image name="Cindy" width="96" height="96"/>
         <image name="Doing" width="84" height="84"/>
@@ -1477,7 +1483,8 @@
         <image name="Group 11" width="73" height="21"/>
         <image name="Group 117" width="501" height="654"/>
         <image name="Group 146" width="45" height="48"/>
-        <image name="Group 147" width="990" height="1548"/>
+        <image name="Group 149" width="1032" height="1590"/>
+        <image name="Group 150" width="1032" height="1590"/>
         <image name="Group 39" width="492" height="450"/>
         <image name="Group 40" width="492" height="450"/>
         <image name="Group 40-1" width="492" height="450"/>
@@ -1497,6 +1504,9 @@
         <namedColor name="Orange 1000">
             <color red="1" green="0.49799999594688416" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
