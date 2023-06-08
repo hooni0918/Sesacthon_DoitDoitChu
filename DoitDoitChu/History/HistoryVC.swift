@@ -54,7 +54,7 @@ class HistoryVC: UIViewController, UIPageViewControllerDataSource, UIPageViewCon
         
         self.pageViewController.view.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            self.pageViewController.view.topAnchor.constraint(equalTo: self.segmentedControl.bottomAnchor), // 수정된 부분
+            self.pageViewController.view.topAnchor.constraint(equalTo: self.segmentedControl.bottomAnchor),
             self.pageViewController.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
             self.pageViewController.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             self.pageViewController.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
@@ -140,7 +140,7 @@ final class UnderlineSegmentedControl: UISegmentedControl {
     
     private lazy var underlineView: UIView = {
         let view = UIView()
-        view.backgroundColor = .black
+        view.backgroundColor = UIColor(named: "Orange 1000")
         addSubview(view)
         return view
     }()

@@ -15,9 +15,14 @@ class SelectCharaterViewController: UIViewController {
     @IBOutlet weak var New: UIButton!
     
     @IBOutlet weak var allView: UIView!
-    
+
     
     @IBOutlet weak var newView: UIView!
+    @IBOutlet weak var todoView: UIView!
+    @IBOutlet weak var teamTodoView: UIView!
+
+    @IBOutlet weak var previewTodo: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,10 +64,16 @@ class SelectCharaterViewController: UIViewController {
         //        allView.layer.borderColor = UIColor(red: 0.58, green: 0.58, blue: 0.58, alpha: 1).cgColor
         
         allView.layer.borderWidth = 1
-        allView .layer.cornerRadius = 20
+        allView.layer.cornerRadius = 20
         
         newView.layer.borderWidth = 1
         newView.layer.cornerRadius = 20
+        
+        todoView.layer.cornerRadius = 12
+        teamTodoView.layer.cornerRadius = 12
+        
+        previewTodo.layer.cornerRadius = 12
+        
         
     }
 }
