@@ -24,7 +24,7 @@ class SoloTodoVC: UIViewController {
 
 
         todoView.layer.cornerRadius = 12
-        
+        openBtn.layer.cornerRadius = 12
             }
     
        private func navigationItems() {

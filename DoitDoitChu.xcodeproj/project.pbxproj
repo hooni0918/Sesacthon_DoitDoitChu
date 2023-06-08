@@ -39,9 +39,11 @@
 		78A6159C2A26F4ED00FF4888 /* TeamTodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6159B2A26F4ED00FF4888 /* TeamTodoVC.swift */; };
 		78A6159E2A26F4F900FF4888 /* TeamCheckvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6159D2A26F4F900FF4888 /* TeamCheckvc.swift */; };
 		78AD94602A308E5300105009 /* OpenCharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AD945F2A308E5300105009 /* OpenCharViewController.swift */; };
+		78AD94622A318FBA00105009 /* SOLOSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AD94612A318FBA00105009 /* SOLOSecondViewController.swift */; };
 		78D5EBB52A2747D400A239FF /* SoloTodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D5EBB42A2747D400A239FF /* SoloTodoVC.swift */; };
 		78D5EBC22A28317400A239FF /* CheckListTestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D5EBC02A28317400A239FF /* CheckListTestTableViewCell.swift */; };
 		78D5EBC32A28317400A239FF /* CheckListTestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78D5EBC12A28317400A239FF /* CheckListTestTableViewCell.xib */; };
+		78E7F15D2A31966C003F4909 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E7F15C2A31966C003F4909 /* LoginViewController.swift */; };
 		AFDF4A71C1654CE347D1BFC6 /* Pods_DoitDoitChu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F6CBFB82CB86BE9DDCCB4E /* Pods_DoitDoitChu.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,9 +84,11 @@
 		78A6159B2A26F4ED00FF4888 /* TeamTodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTodoVC.swift; sourceTree = "<group>"; };
 		78A6159D2A26F4F900FF4888 /* TeamCheckvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCheckvc.swift; sourceTree = "<group>"; };
 		78AD945F2A308E5300105009 /* OpenCharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCharViewController.swift; sourceTree = "<group>"; };
+		78AD94612A318FBA00105009 /* SOLOSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOLOSecondViewController.swift; sourceTree = "<group>"; };
 		78D5EBB42A2747D400A239FF /* SoloTodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloTodoVC.swift; sourceTree = "<group>"; };
 		78D5EBC02A28317400A239FF /* CheckListTestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListTestTableViewCell.swift; sourceTree = "<group>"; };
 		78D5EBC12A28317400A239FF /* CheckListTestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckListTestTableViewCell.xib; sourceTree = "<group>"; };
+		78E7F15C2A31966C003F4909 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B7F6CBFB82CB86BE9DDCCB4E /* Pods_DoitDoitChu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoitDoitChu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -181,6 +185,8 @@
 				78D5EBC02A28317400A239FF /* CheckListTestTableViewCell.swift */,
 				78D5EBC12A28317400A239FF /* CheckListTestTableViewCell.xib */,
 				78AD945F2A308E5300105009 /* OpenCharViewController.swift */,
+				78AD94612A318FBA00105009 /* SOLOSecondViewController.swift */,
+				78E7F15C2A31966C003F4909 /* LoginViewController.swift */,
 			);
 			path = Solo;
 			sourceTree = "<group>";
@@ -350,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E7F15D2A31966C003F4909 /* LoginViewController.swift in Sources */,
 				781422702A2DB4F2006DDF3A /* MyTodoViewController.swift in Sources */,
 				78A6159C2A26F4ED00FF4888 /* TeamTodoVC.swift in Sources */,
 				78543F1C2A24F8A9009D07D5 /* AppDelegate.swift in Sources */,
@@ -363,6 +370,7 @@
 				78D5EBC22A28317400A239FF /* CheckListTestTableViewCell.swift in Sources */,
 				785622532A2CEA750065B48E /* TodoDoneViewController.swift in Sources */,
 				78D5EBB52A2747D400A239FF /* SoloTodoVC.swift in Sources */,
+				78AD94622A318FBA00105009 /* SOLOSecondViewController.swift in Sources */,
 				7814227B2A2F0DA7006DDF3A /* TeamAPi.swift in Sources */,
 				78A6159E2A26F4F900FF4888 /* TeamCheckvc.swift in Sources */,
 				785DECFA2A28BE9600937B27 /* TeamTodoCharViewController.swift in Sources */,
