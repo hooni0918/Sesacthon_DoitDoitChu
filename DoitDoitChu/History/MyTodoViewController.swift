@@ -60,9 +60,13 @@ class MyTodoViewController: UIViewController {
         
         allView.layer.borderWidth = 1
         allView.layer.cornerRadius = 20
+        allView.layer.borderColor = UIColor(red: 0.58, green: 0.58, blue: 0.58, alpha: 1).cgColor
+
         
         newView.layer.borderWidth = 1
         newView.layer.cornerRadius = 20
+        newView.layer.borderColor = UIColor(red: 0.58, green: 0.58, blue: 0.58, alpha: 1).cgColor
+
         
             }
     
