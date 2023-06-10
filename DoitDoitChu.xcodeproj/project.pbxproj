@@ -13,7 +13,6 @@
 		781422782A2F01AD006DDF3A /* DetailTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781422772A2F01AD006DDF3A /* DetailTodoViewController.swift */; };
 		7814227B2A2F0DA7006DDF3A /* TeamAPi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814227A2A2F0DA7006DDF3A /* TeamAPi.swift */; };
 		781496DF2A29FFE900B7C89D /* WriteTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781496DE2A29FFE900B7C89D /* WriteTodoViewController.swift */; };
-		781A23212A263EB100A0B629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 781A23202A263EB100A0B629 /* Assets.xcassets */; };
 		78543F1C2A24F8A9009D07D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78543F1B2A24F8A9009D07D5 /* AppDelegate.swift */; };
 		78543F1E2A24F8A9009D07D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78543F1D2A24F8A9009D07D5 /* SceneDelegate.swift */; };
 		78543F232A24F8A9009D07D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78543F212A24F8A9009D07D5 /* Main.storyboard */; };
@@ -23,6 +22,7 @@
 		785622532A2CEA750065B48E /* TodoDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785622522A2CEA750065B48E /* TodoDoneViewController.swift */; };
 		785622572A2CEFD80065B48E /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785622562A2CEFD80065B48E /* Lottie.framework */; };
 		7856225C2A2D5C520065B48E /* 85744-success.json in Resources */ = {isa = PBXBuildFile; fileRef = 7856225B2A2D5C520065B48E /* 85744-success.json */; };
+		7858D1282A3314EB005FF4D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 781A23202A263EB100A0B629 /* Assets.xcassets */; };
 		785DECF82A286AC200937B27 /* StartTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785DECF72A286AC200937B27 /* StartTeamViewController.swift */; };
 		785DECFA2A28BE9600937B27 /* TeamTodoCharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785DECF92A28BE9600937B27 /* TeamTodoCharViewController.swift */; };
 		78A6158A2A26E37B00FF4888 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78A615812A26E37A00FF4888 /* Pretendard-Regular.otf */; };
@@ -56,7 +56,7 @@
 		781422772A2F01AD006DDF3A /* DetailTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTodoViewController.swift; sourceTree = "<group>"; };
 		7814227A2A2F0DA7006DDF3A /* TeamAPi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamAPi.swift; sourceTree = "<group>"; };
 		781496DE2A29FFE900B7C89D /* WriteTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteTodoViewController.swift; sourceTree = "<group>"; };
-		781A23202A263EB100A0B629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		781A23202A263EB100A0B629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = DoitDoitChu/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		78543F182A24F8A9009D07D5 /* DoitDoitChu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoitDoitChu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78543F1B2A24F8A9009D07D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78543F1D2A24F8A9009D07D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -293,6 +293,7 @@
 				78D5EBC32A28317400A239FF /* CheckListTestTableViewCell.xib in Resources */,
 				78A6158B2A26E37B00FF4888 /* Pretendard-Thin.otf in Resources */,
 				78A615902A26E37B00FF4888 /* Pretendard-ExtraLight.otf in Resources */,
+				7858D1282A3314EB005FF4D0 /* Assets.xcassets in Resources */,
 				78A615922A26E37B00FF4888 /* Pretendard-SemiBold.otf in Resources */,
 				78A6158C2A26E37B00FF4888 /* Pretendard-ExtraBold.otf in Resources */,
 				78A6158E2A26E37B00FF4888 /* Pretendard-Medium.otf in Resources */,
@@ -300,7 +301,6 @@
 				78A615912A26E37B00FF4888 /* Pretendard-Black.otf in Resources */,
 				7856225C2A2D5C520065B48E /* 85744-success.json in Resources */,
 				78A6158D2A26E37B00FF4888 /* Pretendard-Light.otf in Resources */,
-				781A23212A263EB100A0B629 /* Assets.xcassets in Resources */,
 				78A6158F2A26E37B00FF4888 /* Pretendard-Bold.otf in Resources */,
 				78543F232A24F8A9009D07D5 /* Main.storyboard in Resources */,
 				7856224F2A2CC33E0065B48E /* GoogleService-Info (1).plist in Resources */,
@@ -522,6 +522,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D2DRA3F792;
@@ -551,6 +552,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D2DRA3F792;
